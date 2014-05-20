@@ -32,21 +32,35 @@ TARGET_CPU_VARIANT := krait
 WIFI_BAND := 802_11_ABG
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-BOARD_WLAN_DEVICE := bcmdhd
 BOARD_HAVE_SAMSUNG_WIFI := true
 
-WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcmdhd_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
-WIFI_DRIVER_MODULE_AP_ARG   := "firmware_path=/system/etc/wifi/bcmdhd_apsta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/dhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
-WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
+ifeq ($(TARGET_MSM8974_COMMON_WLAN_VARIANT),prima)
+  BOARD_WLAN_DEVICE := qcwcn
+  BOARD_HAS_QCOM_WLAN := true
+  TARGET_USES_WCNSS_CTRL := true
+  WIFI_DRIVER_FW_PATH_STA   := "sta"
+  WIFI_DRIVER_FW_PATH_AP    := "ap"
+else
+  BOARD_WLAN_DEVICE := bcmdhd
+  WIFI_DRIVER_MODULE_ARG      := "firmware_path=/system/etc/wifi/bcmdhd_sta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
+  WIFI_DRIVER_MODULE_AP_ARG   := "firmware_path=/system/etc/wifi/bcmdhd_apsta.bin nvram_path=/system/etc/wifi/nvram_net.txt"
+  WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/dhd/parameters/firmware_path"
+  WIFI_DRIVER_FW_PATH_STA     := "/system/etc/wifi/bcmdhd_sta.bin"
+  WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
+endif
+
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BCM := true
+ifeq ($(TARGET_MSM8974_COMMON_WLAN_VARIANT),prima)
+  BOARD_HAVE_BLUETOOTH_QCOM := true
+else
+  BOARD_HAVE_BLUETOOTH_BCM := true
+endif
 
 # NFC
 BOARD_HAVE_NFC := true
@@ -83,6 +97,9 @@ TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Use retire fence from MDP driver
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
+
+# Include path
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8974-common/include
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
