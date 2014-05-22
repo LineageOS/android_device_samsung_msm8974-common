@@ -82,9 +82,6 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
-# Media Codecs
-PRODUCT_COPY_FILES += device/samsung/msm8974-common/media/media_codecs.xml:system/etc/media_codecs.xml
-
 # keylayouts
 PRODUCT_COPY_FILES += \
     device/samsung/msm8974-common/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
