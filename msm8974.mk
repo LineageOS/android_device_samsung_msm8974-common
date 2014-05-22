@@ -50,19 +50,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.msm8974
 
-# GPS
-PRODUCT_PACKAGES += \
-    gps.msm8974 \
-    libgps.utils \
-    libloc_core \
-    libloc_eng
-
-GPS_CONF := device/samsung/msm8974-common/gps/etc/gps.conf
-
-PRODUCT_COPY_FILES += \
-    $(GPS_CONF):/system/etc/gps.conf \
-    device/samsung/msm8974-common/gps/etc/sap.conf:/system/etc/sap.conf
-
 # HAL
 PRODUCT_PACKAGES += \
     copybit.msm8974 \
