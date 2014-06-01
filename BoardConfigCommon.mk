@@ -98,9 +98,6 @@ TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 # Use retire fence from MDP driver
 TARGET_DISPLAY_USE_RETIRE_FENCE := true
 
-# Include path
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8974-common/include
-
 # SELinux
 BOARD_SEPOLICY_DIRS += \
         device/samsung/msm8974-common/sepolicy
