@@ -75,9 +75,6 @@ TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 
-# Workaround to avoid issues with legacy liblights on QCOM platforms
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
 BOARD_USES_ALSA_AUDIO := true
