@@ -78,6 +78,9 @@ COMMON_GLOBAL_CFLAGS += -DSAMSUNG_CAMERA_HARDWARE
 # Workaround to avoid issues with legacy liblights on QCOM platforms
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Charging Mode Override.
+BOARD_CHARGING_MODE_BOOTING_LPM := 
+
 # Audio
 BOARD_HAVE_SAMSUNG_AUDIO := true
 BOARD_USES_ALSA_AUDIO := true
