@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_332b8c84",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-08-01T22:27:25Z",
+      "side": 1,
+      "message": "mondrianwifi has dtcpip.b02 which isn\u0027t being linked here.",
+      "revId": "1ddf46636e50183bbbd322b95c3a533a3a866e32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_9320989d",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-08-01T22:27:25Z",
+      "side": 1,
+      "message": "mondrianwifi: fyi: does not have modem.b04, but if the other devices do then no harm in linking it.",
+      "revId": "1ddf46636e50183bbbd322b95c3a533a3a866e32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_732504aa",
+        "filename": "Android.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 195,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-08-01T22:27:25Z",
+      "side": 1,
+      "message": "mondrianwifi also has links to:\n\n/firmware/image/skmm_ta.b00\n/firmware/image/skmm_ta.b01\n/firmware/image/skmm_ta.b02\n/firmware/image/skmm_ta.b03\n/firmware/image/skmm_ta.mdt\n\n/firmware/image/tzpr25.b00\n/firmware/image/tzpr25.b01\n/firmware/image/tzpr25.b02\n/firmware/image/tzpr25.b03\n/firmware/image/tzpr25.mdt",
+      "revId": "1ddf46636e50183bbbd322b95c3a533a3a866e32",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
