@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_3cd1b9fc",
+        "filename": "Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-08-15T09:13:33Z",
+      "side": 1,
+      "message": "I don\u0027t see any wcd9320_mad_audio.bin on my phone. klte doesn\u0027t support voice wakeup either AFAIK.",
+      "revId": "3e5724a848e06c8b16019f31891dcf1c0a836244",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
