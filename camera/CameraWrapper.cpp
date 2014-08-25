@@ -116,7 +116,7 @@ static char * camera_fixup_getparams(int id, const char * settings)
     const char* hfrValues = params.get(KEY_VIDEO_HFR_VALUES);
     if (hfrValues && *hfrValues && ! strstr(hfrValues, "off")) {
         char tmp[strlen(hfrValues) + 4 + 1];
-        sprintf(tmp, "off,%s", hfrValues);
+        sprintf(tmp, "%s,off", hfrValues);
         params.set(KEY_VIDEO_HFR_VALUES, tmp);
     }
 
