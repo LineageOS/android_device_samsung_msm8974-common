@@ -103,10 +103,16 @@ static char * camera_fixup_getparams(int id, const char * settings)
     android::CameraParameters params;
     params.unflatten(android::String8(settings));
 
+#ifdef LOG_PARAMETERS
+    ALOGV("%s: original parameters:", __FUNCTION__);
+    params.dump();
+#endif
+
     /* If the vendor has HFR values but doesn't also expose that
      * this can be turned off, fixup the params to tell the Camera
      * that it really is okay to turn it off.
      */
+
     const char* hfrValues = params.get(KEY_VIDEO_HFR_VALUES);
     if (hfrValues && *hfrValues && ! strstr(hfrValues, "off")) {
         char tmp[strlen(hfrValues) + 4 + 1];
@@ -117,7 +123,10 @@ static char * camera_fixup_getparams(int id, const char * settings)
     android::String8 strParams = params.flatten();
     char *ret = strdup(strParams.string());
 
-    ALOGD("%s: get parameters fixed up", __FUNCTION__);
+#ifdef LOG_PARAMETERS
+    ALOGV("%s: fixed parameters:", __FUNCTION__);
+    params.dump();
+#endif
     return ret;
 }
 
@@ -126,6 +135,12 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
     int id = CAMERA_ID(device);
     android::CameraParameters params;
     params.unflatten(android::String8(settings));
+
+#ifdef LOG_PARAMETERS
+    ALOGV("%s: original parameters:", __FUNCTION__);
+    params.dump();
+#endif
+
     const char* recordingHint = params.get(android::CameraParameters::KEY_RECORDING_HINT);
     bool isVideo = recordingHint && !strcmp(recordingHint, "true");
 
@@ -143,7 +158,11 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
     fixed_set_params[id] = strdup(strParams.string());
     char *ret = fixed_set_params[id];
 
-    ALOGD("%s: set parameters fixed up", __FUNCTION__);
+#ifdef LOG_PARAMETERS
+    ALOGV("%s: fixed parameters:", __FUNCTION__);
+    params.dump();
+#endif
+
     return ret;
 }
 
@@ -357,10 +376,6 @@ int camera_set_parameters(struct camera_device * device, const char *params)
     char *tmp = NULL;
     tmp = camera_fixup_setparams(device, params);
 
-#ifdef LOG_PARAMETERS
-    __android_log_write(ANDROID_LOG_VERBOSE, LOG_TAG, tmp);
-#endif
-
     int ret = VENDOR_CALL(device, set_parameters, tmp);
     return ret;
 }
@@ -375,17 +390,9 @@ char* camera_get_parameters(struct camera_device * device)
 
     char* params = VENDOR_CALL(device, get_parameters);
 
-#ifdef LOG_PARAMETERS
-    __android_log_write(ANDROID_LOG_VERBOSE, LOG_TAG, params);
-#endif
-
     char * tmp = camera_fixup_getparams(CAMERA_ID(device), params);
     VENDOR_CALL(device, put_parameters, params);
     params = tmp;
-
-#ifdef LOG_PARAMETERS
-    __android_log_write(ANDROID_LOG_VERBOSE, LOG_TAG, params);
-#endif
 
     return params;
 }
