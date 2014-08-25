@@ -97,6 +97,7 @@ static int check_vendor_module()
 }
 
 #define KEY_VIDEO_HFR_VALUES "video-hfr-values"
+#define KEY_HFR_SIZE_VALUES "hfr-size-values"
 
 static char * camera_fixup_getparams(int id, const char * settings)
 {
@@ -119,6 +120,16 @@ static char * camera_fixup_getparams(int id, const char * settings)
         sprintf(tmp, "off,%s", hfrValues);
         params.set(KEY_VIDEO_HFR_VALUES, tmp);
     }
+
+    /* If the number of HFR values does not have a matching set
+     * of size values the Camera will crash due to an out of bounds.
+     * Fix this by adding a dummy entry for the added "off" above.
+     */
+
+    const char* hfrSizes = params.get(KEY_HFR_SIZE_VALUES);
+        char tmp[strlen(hfrSizes) + 4 + 1];
+        sprintf(tmp, "0x0,%s",hfrSizes);
+        params.set(KEY_HFR_SIZE_VALUES, tmp);
 
     android::String8 strParams = params.flatten();
     char *ret = strdup(strParams.string());
