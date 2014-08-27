@@ -42,8 +42,6 @@ BOARD_CHARGING_CMDLINE_VALUE := "true"
 
 # Display
 BOARD_EGL_CFG := device/samsung/msm8974-common/configs/egl.cfg
-TARGET_DISPLAY_USE_RETIRE_FENCE := true
-TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
