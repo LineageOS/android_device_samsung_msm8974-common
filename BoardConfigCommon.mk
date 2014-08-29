@@ -43,6 +43,7 @@ BOARD_CHARGING_CMDLINE_VALUE := "true"
 # Display
 BOARD_EGL_CFG := device/samsung/msm8974-common/configs/egl.cfg
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
 # Shader cache config options
