@@ -54,14 +54,14 @@ $(DTCPIP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 ALL_DEFAULT_INSTALLED_MODULES += $(DTCPIP_SYMLINKS)
 
 KM_IMAGES := \
-    keymaste.b00 keymaste.b01 keymaste.b02 keymaste.b03 keymaste.mdt
+    keymaster.b00 keymaster.b01 keymaster.b02 keymaster.b03 keymaster.mdt
 
-KM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(KM_IMAGES)))
+KM_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/keymaster/,$(notdir $(KM_IMAGES)))
 $(KM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Keymaster firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
-	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+	$(hide) ln -sf /firmware/image/keymaste$(suffix $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(KM_SYMLINKS)
 
@@ -206,7 +206,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(VENUS_SYMLINKS)
 WV_IMAGES := \
     widevine.b00 widevine.b01 widevine.b02 widevine.b03 widevine.mdt
 
-WV_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(WV_IMAGES)))
+WV_SYMLINKS := $(addprefix $(TARGET_OUT_VENDOR)/firmware/,$(notdir $(WV_IMAGES)))
 $(WV_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@echo "Widevine firmware link: $@"
 	@mkdir -p $(dir $@)
