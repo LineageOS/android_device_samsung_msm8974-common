@@ -40,6 +40,9 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
 
+# Classpath
+PRODUCT_BOOT_JARS := $(subst $(space),:,$(PRODUCT_BOOT_JARS))
+
 # Display
 BOARD_EGL_CFG := device/samsung/msm8974-common/configs/egl.cfg
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
