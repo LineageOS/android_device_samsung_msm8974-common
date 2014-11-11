@@ -18,7 +18,7 @@
     "branch": "cm-12.0-caf-8974"
   },
   {
-    "repository": "android_hardware_qcom_media-caf-new",
+    "repository": "android_hardware_qcom_media",
     "target_path": "hardware/qcom/media-caf/msm8974",
     "branch": "cm-12.0-caf-8974"
   }
