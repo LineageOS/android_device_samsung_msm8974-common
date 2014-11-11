@@ -24,7 +24,6 @@ TARGET_CPU_VARIANT := krait
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-TARGET_QCOM_AUDIO_VARIANT := caf
 TARGET_USES_QCOM_COMPRESSED_AUDIO := true
 
 # Bluetooth
@@ -45,7 +44,6 @@ PRODUCT_BOOT_JARS := $(subst $(space),:,$(PRODUCT_BOOT_JARS))
 
 # Display
 BOARD_EGL_CFG := device/samsung/msm8974-common/configs/egl.cfg
-TARGET_QCOM_DISPLAY_VARIANT := caf-new
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
@@ -60,7 +58,6 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Media
-TARGET_QCOM_MEDIA_VARIANT := caf-new
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 # Qualcomm support
