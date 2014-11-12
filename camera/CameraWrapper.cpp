@@ -146,9 +146,9 @@ char * camera_fixup_setparams(struct camera_device * device, const char * settin
 
     if (isVideo) {
         params.set("dis", "disable");
-        params.set(android::CameraParameters::KEY_ZSL, "off");
+        //params.set(android::CameraParameters::KEY_ZSL, "off");
     } else {
-        params.set(android::CameraParameters::KEY_ZSL, "on");
+        //params.set(android::CameraParameters::KEY_ZSL, "on");
     }
 
     android::String8 strParams = params.flatten();
