@@ -21,6 +21,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # Architecture
 TARGET_CPU_VARIANT := krait
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
