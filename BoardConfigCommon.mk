@@ -54,13 +54,6 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-# Media
-TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
-
-# Qualcomm support
-COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
-TARGET_USES_QCOM_BSP := true
-
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/msm8974-common/sepolicy
