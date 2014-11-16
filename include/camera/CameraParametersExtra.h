@@ -20,7 +20,9 @@ const char CameraParameters::DIS_DISABLE[] = "disable"; \
 \
 const char CameraParameters::KEY_ZSL[] = "zsl"; \
 const char CameraParameters::ZSL_ON[] = "on"; \
-const char CameraParameters::ZSL_OFF[] = "off";
+const char CameraParameters::ZSL_OFF[] = "off"; \
+\
+int CameraParameters::getInt64(const char *key) const { return -1; }
 
 #define CAMERA_PARAMETERS_EXTRA_H \
     static const char KEY_DIS[]; \
@@ -28,5 +30,6 @@ const char CameraParameters::ZSL_OFF[] = "off";
     \
     static const char KEY_ZSL[]; \
     static const char ZSL_ON[]; \
-    static const char ZSL_OFF[];
-
+    static const char ZSL_OFF[]; \
+    \
+    int getInt64(const char *key) const;
