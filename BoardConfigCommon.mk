@@ -89,6 +89,9 @@ BOARD_USES_QC_TIME_SERVICES := true
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
+# Include an expanded selection of fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 BOARD_VOLD_MAX_PARTITIONS := 28
