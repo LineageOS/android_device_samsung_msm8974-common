@@ -49,6 +49,9 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+# Fonts
+EXTENDED_FONT_FOOTPRINT := true
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/samsung/msm8974-common/sepolicy
