@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a122d0e_5f6f3192",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-11-17T07:40:49Z",
+      "side": 1,
+      "message": "Doh.  All my vi rules are conditioned on \"cm-11.0\" in the filename.  Good thing I looked before accusing Tony of needing to configure his system right!",
+      "parentUuid": "1a122d0e_1faad9d4",
+      "revId": "4e3d0ff106c12af4cdf0db34e3cd55bff65177d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a122d0e_3fa51504",
         "filename": "include/camera/CameraParametersExtra.h",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2014-11-17T06:10:33Z",
       "side": 1,
       "message": "whats with these empty lines?",
+      "revId": "4e3d0ff106c12af4cdf0db34e3cd55bff65177d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_7f72ed7d",
+        "filename": "include/camera/CameraParametersExtra.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-11-17T07:40:49Z",
+      "side": 1,
+      "message": "When you have sets of (parameter name, value1, value2, ..., valuen), I find it much easier to maintain if you separate each set into a block. That way it should be clear how to sort and add them and clear which are names and which are values...",
+      "parentUuid": "1a122d0e_3fa51504",
       "revId": "4e3d0ff106c12af4cdf0db34e3cd55bff65177d1",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
