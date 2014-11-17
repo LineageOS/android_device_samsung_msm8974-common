@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_1faad9d4",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2014-11-17T06:10:33Z",
+      "side": 1,
+      "message": "tab spacing!?!?",
+      "revId": "4e3d0ff106c12af4cdf0db34e3cd55bff65177d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_3fa51504",
+        "filename": "include/camera/CameraParametersExtra.h",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2014-11-17T06:10:33Z",
+      "side": 1,
+      "message": "whats with these empty lines?",
+      "revId": "4e3d0ff106c12af4cdf0db34e3cd55bff65177d1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
