@@ -39,8 +39,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.resampler.quality=4 \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
-    av.offload.enable=true \
-    qcom.hw.aac.encoder=true
+    av.offload.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
@@ -110,6 +109,9 @@ PRODUCT_COPY_FILES += \
 
 # Media
 PRODUCT_COPY_FILES += \
+    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml  \
     device/samsung/msm8974-common/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 PRODUCT_PACKAGES += \
