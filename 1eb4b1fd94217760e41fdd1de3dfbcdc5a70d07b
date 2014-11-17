@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_74a3349f",
+        "filename": "camera/CameraWrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2014-11-17T00:18:51Z",
+      "side": 1,
+      "message": "Why are you changing this to a string literal when you just created a new constant in the new .h file for zsl?",
+      "revId": "1eb4b1fd94217760e41fdd1de3dfbcdc5a70d07b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
