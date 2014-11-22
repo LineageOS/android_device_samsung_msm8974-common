@@ -41,6 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.gapless.enabled=false \
     av.offload.enable=true \
     qcom.hw.aac.encoder=true
+    media.stagefright.use-awesome=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
