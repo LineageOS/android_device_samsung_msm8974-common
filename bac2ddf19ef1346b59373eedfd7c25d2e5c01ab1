@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bab6814e_f00be07b",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 8521
+      },
+      "writtenOn": "2014-11-23T08:17:04Z",
+      "side": 1,
+      "message": "I guess you\u0027re missing a \"\\\" after qcom.hw.aac.encoder\u003dtrue.",
+      "revId": "bac2ddf19ef1346b59373eedfd7c25d2e5c01ab1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
