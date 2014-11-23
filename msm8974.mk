@@ -79,11 +79,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-# Camera
-PRODUCT_PACKAGES += \
-    camera.msm8974 \
-    libxml2
-
 # CRDA
 PRODUCT_PACKAGES += \
     crda \
