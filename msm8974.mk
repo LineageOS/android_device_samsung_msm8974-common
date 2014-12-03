@@ -133,11 +133,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.msm8974
 
-# QRNGD
-PRODUCT_PACKAGES += \
-    qrngd \
-    qrngp
-
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
