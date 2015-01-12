@@ -179,17 +179,17 @@ $(TIMA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(TIMA_SYMLINKS)
 
-TZPR_IMAGES := \
-    tzpr25.b00 tzpr25.b01 tzpr25.b02 tzpr25.b03 tzpr25.mdt
+TZ_CCM_IMAGES := \
+    tz_ccm.b00 tz_ccm.b01 tz_ccm.b02 tz_ccm.b03 tz_ccm.mdt
 
-TZPR_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(TZPR_IMAGES)))
-$(TZPR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "TZPR firmware link: $@"
+TZ_CCM_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(TZ_CCM_IMAGES)))
+$(TZ_CCM_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "TZ_CCM firmware link: $@"
 	@mkdir -p $(dir $@)
 	@rm -rf $@
 	$(hide) ln -sf /firmware/image/$(notdir $@) $@
 
-ALL_DEFAULT_INSTALLED_MODULES += $(TZPR_SYMLINKS)
+ALL_DEFAULT_INSTALLED_MODULES += $(TZ_CCM_SYMLINKS)
 
 VENUS_IMAGES := \
     venus.b00 venus.b01 venus.b02 venus.b03 venus.b04 venus.mdt
