@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a9d85d2_0f5abc83",
+        "filename": "Android.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 2814
+      },
+      "writtenOn": "2015-01-17T14:29:10Z",
+      "side": 1,
+      "message": "I dont seem to have these on my firmware partition will that become an issue?",
+      "revId": "b6b70b8be9712190b6fe738cf6e90bcec7c3b5d2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
