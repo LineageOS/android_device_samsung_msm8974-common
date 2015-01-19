@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a9d85d2_5b3c852f",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "This is built automaticaly",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_bb4929d3",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "Built automaticaly",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_9b46edbd",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "This package doesn\u0027t exist on cm12 ( i cant find it :/ )",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_fb11f1b0",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "This package doesn\u0027t exist on cm12 ( i cant find it :/ )",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_db16b5a6",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "This package doesn\u0027t exist on cm12 ( i cant find it :/ )",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a9d85d2_3b0c1994",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 11089
+      },
+      "writtenOn": "2015-01-19T14:33:23Z",
+      "side": 1,
+      "message": "This package doesn\u0027t exist on cm12 ( i cant find it :/ )",
+      "revId": "9d098d1c5732d24d74c6430bd684982b8fa9a7e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
