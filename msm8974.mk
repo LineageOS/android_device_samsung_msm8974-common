@@ -40,7 +40,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
     mm.enable.qcom_parser=3314291 \
-    av.offload.enable=true
+    av.offload.enable=true \
+    persist.sys.isUsbOtgEnabled=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
