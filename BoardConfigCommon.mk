@@ -33,6 +33,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
+BOARD_CHARGER_SHOW_PERCENTAGE := "true"
 
 # Display
 BOARD_EGL_CFG := device/samsung/msm8974-common/configs/egl.cfg
