@@ -77,6 +77,30 @@ $(MBA_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(MBA_SYMLINKS)
 
+DXPRDY_IMAGES := \
+    dxprdy.b00 dxprdy.b01 dxprdy.b02 dxprdy.b03 dxprdy.mdt
+
+DXPRDY_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(DXPRDY_IMAGES)))
+$(DXPRDY_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "DXPRDY firmware link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(DXPRDY_SYMLINKS)
+
+MLDAP_IMAGES := \
+    mldap.b00 mldap.b01 mldap.b02 mldap.b03 mldap.mdt
+
+MLDAP_SYMLINKS := $(addprefix $(TARGET_OUT_ETC)/firmware/,$(notdir $(MLDAP_IMAGES)))
+$(MLDAP_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	@echo "MLDAP firmware link: $@"
+	@mkdir -p $(dir $@)
+	@rm -rf $@
+	$(hide) ln -sf /firmware/image/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(MLDAP_SYMLINKS)
+
 MC_IMAGES := \
     mc_v2.b00 mc_v2.b01 mc_v2.b02 mc_v2.b03 mc_v2.mdt
 
