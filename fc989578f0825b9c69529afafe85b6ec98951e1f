@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f2f7f8d_0f2ee942",
+        "filename": "msm8974.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-11-09T01:27:40Z",
+      "side": 1,
+      "message": "Where are these packages coming from? I don\u0027t see definitions for this, or libOmxVidcCommon.",
+      "revId": "fc989578f0825b9c69529afafe85b6ec98951e1f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
