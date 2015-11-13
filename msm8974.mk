@@ -57,9 +57,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.rild.nitz_short_ons_3=""
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=/vendor/lib/libqc-opt.so
-
-PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
