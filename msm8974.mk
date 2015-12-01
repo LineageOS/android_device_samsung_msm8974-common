@@ -131,9 +131,5 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 PRODUCT_PACKAGES += \
     power.msm8974
 
-# USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
-
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
