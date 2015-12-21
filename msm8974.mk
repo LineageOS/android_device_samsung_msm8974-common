@@ -71,15 +71,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true \
-    ro.qc.sdk.audio.fluencetype=fluence \
-    persist.audio.fluence.voicecall=true \
     audio.offload.buffer.size.kb=32 \
     audio.offload.video=true \
     av.streaming.offload.enable=true \
-    use.voice.path.for.pcm.voip=true \
-    audio.offload.multiple.enabled=false \
     audio.offload.gapless.enabled=true \
-    media.aac_51_output_enabled=true \
     audio.offload.pcm.16bit.enable=false \
     audio.offload.pcm.24bit.enable=true \
     audio.deep_buffer.media=true 
@@ -87,7 +82,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Reduce client buffer size for fast audio output tracks
 PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1
-    
+
 # CRDA
 PRODUCT_PACKAGES += \
     crda \
@@ -130,6 +125,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libOmxVdec \
+    libOmxVdecHevc \
     libOmxVenc \
     libstagefrighthw \
 
