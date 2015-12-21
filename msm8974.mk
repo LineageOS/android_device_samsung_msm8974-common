@@ -37,11 +37,6 @@ PRODUCT_COPY_FILES += \
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=false \
-    av.offload.enable=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -69,11 +64,24 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8974 \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
     libqcomvisualizer \
     libqcompostprocbundle \
     libqcomvoiceprocessing \
     tinymix
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    mm.enable.smoothstreaming=true \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.video=true \
+    av.streaming.offload.enable=true \
+    audio.offload.gapless.enabled=true \
+    audio.offload.pcm.16bit.enable=false \
+    audio.offload.pcm.24bit.enable=true \
+    audio.deep_buffer.media=true 
+
+# Reduce client buffer size for fast audio output tracks
+PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1
 
 # CRDA
 PRODUCT_PACKAGES += \
@@ -111,8 +119,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libdivxdrmdecrypt \
-    libdashplayer \
-    libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -121,19 +127,11 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc \
-    libqcmediaplayer \
     libstagefrighthw \
-    qcmediaplayer
-
-PRODUCT_BOOT_JARS += qcmediaplayer
 
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8974
-
-# USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
 
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
