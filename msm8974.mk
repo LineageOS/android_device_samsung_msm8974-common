@@ -69,7 +69,6 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8974 \
     audio.r_submix.default \
     audio.usb.default \
-    libaudio-resampler \
     libqcomvisualizer \
     libqcompostprocbundle \
     libqcomvoiceprocessing \
@@ -111,8 +110,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libdivxdrmdecrypt \
-    libdashplayer \
-    libextmedia_jni \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -121,19 +118,11 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc \
-    libqcmediaplayer \
     libstagefrighthw \
-    qcmediaplayer
-
-PRODUCT_BOOT_JARS += qcmediaplayer
 
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8974
-
-# USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
 
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
