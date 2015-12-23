@@ -40,6 +40,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.gapless.enabled=false \
     av.offload.enable=true
 
+# Reduce client buffer size for fast audio output tracks
+PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
