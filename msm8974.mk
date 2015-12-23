@@ -37,9 +37,13 @@ PRODUCT_COPY_FILES += \
 
 # System properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    mm.enable.smoothstreaming=true \
     audio.offload.buffer.size.kb=32 \
-    audio.offload.gapless.enabled=false \
-    av.offload.enable=true \
+    audio.offload.video=true \
+    av.streaming.offload.enable=true \
+    audio.offload.gapless.enabled=true \
+    audio.offload.pcm.16bit.enable=false \
+    audio.offload.pcm.24bit.enable=true \
     audio.deep_buffer.media=true
     
 # Reduce client buffer size for fast audio output tracks
