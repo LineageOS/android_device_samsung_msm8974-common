@@ -41,6 +41,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     av.offload.enable=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
 
 PRODUCT_PROPERTY_OVERRIDES += \
