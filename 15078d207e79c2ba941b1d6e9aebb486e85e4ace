@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f7f9b97_9d66e451",
+        "filename": "msm8974.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-23T09:27:18Z",
+      "side": 1,
+      "message": "Trailing whitespace, also these are properties, there\u0027s no reason to move it from above.",
+      "revId": "15078d207e79c2ba941b1d6e9aebb486e85e4ace",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f7f9b97_3d5b1088",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-23T09:27:18Z",
+      "side": 1,
+      "message": "Trailing whitespace.",
+      "revId": "15078d207e79c2ba941b1d6e9aebb486e85e4ace",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f7f9b97_5d604c33",
+        "filename": "overlay/vendor/cmsdk/cm/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-23T09:27:18Z",
+      "side": 1,
+      "message": "You probably don\u0027t want to set any of these.",
+      "revId": "15078d207e79c2ba941b1d6e9aebb486e85e4ace",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
