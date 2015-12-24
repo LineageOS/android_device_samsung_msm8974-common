@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f7f9b97_33b57fef",
+        "filename": "msm8974.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2015-12-24T02:36:51Z",
+      "side": 1,
+      "message": "I\u0027m not sure all devices can do 24-bit PCM here.",
+      "revId": "855cf947c7856543e39fae43e70017733f90af48",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
