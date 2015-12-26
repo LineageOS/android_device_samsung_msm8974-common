@@ -24,7 +24,6 @@ TARGET_CPU_VARIANT := krait
 
 # Audio
 BOARD_USES_ALSA_AUDIO := true
-TARGET_USES_QCOM_COMPRESSED_AUDIO := true
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -48,13 +47,5 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
-# Fonts
-EXTENDED_FONT_FOOTPRINT := true
-
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
-
-# Vold
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
-BOARD_VOLD_MAX_PARTITIONS := 28
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
