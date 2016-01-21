@@ -17,7 +17,6 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8974-common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
@@ -39,9 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
     audio.offload.gapless.enabled=false \
     av.offload.enable=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    af.fast_track_multiplier=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608
