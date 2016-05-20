@@ -37,6 +37,10 @@ BOARD_CHARGING_CMDLINE_VALUE := "true"
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm8974
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
+
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
