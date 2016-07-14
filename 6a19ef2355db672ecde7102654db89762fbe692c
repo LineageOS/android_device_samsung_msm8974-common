@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fa7e38b_71cbe652",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-07-14T01:05:47Z",
+      "side": 1,
+      "message": "Probably shouldn\u0027t go in the middle of the display related items.",
+      "revId": "6a19ef2355db672ecde7102654db89762fbe692c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
