@@ -32,6 +32,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
+# Camera
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+
 # Charger
 BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
@@ -81,6 +84,9 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_WIFI_STATS := true
 TARGET_USES_INTERACTION_BOOST := true
+
+# Properties
+TARGET_SYSTEM_PROP += device/samsung/msm8974-common/system.prop
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
