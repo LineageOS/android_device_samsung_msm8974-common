@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff2e2bb8_4246957e",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2016-10-28T01:46:26Z",
+      "side": 1,
+      "message": "Alphabetize your flags.",
+      "revId": "6a3afc27ede2d148b41085a2c353fd815c24067b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
