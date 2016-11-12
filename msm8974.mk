@@ -16,6 +16,9 @@
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8974-common/overlay
 
+# Boot animation
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/vendor/etc/permissions/android.hardware.bluetooth_le.xml \
