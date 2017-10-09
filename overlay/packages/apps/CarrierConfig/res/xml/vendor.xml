@@ -35,4 +35,17 @@
     <carrier_config mcc="310" mnc="480">
         <boolean name="disable_cdma_activation_code_bool" value="true" />
     </carrier_config>
+
+    <carrier_config mcc="310" mnc="120">
+        <boolean name="sprint_mwi_quirk" value="true" />
+    </carrier_config>
+    <carrier_config mcc="311" mnc="490">
+        <boolean name="sprint_mwi_quirk" value="true" />
+    </carrier_config>
+    <carrier_config mcc="311" mnc="870">
+        <boolean name="sprint_mwi_quirk" value="true" />
+    </carrier_config>
+    <carrier_config mcc="312" mnc="530">
+        <boolean name="sprint_mwi_quirk" value="true" />
+    </carrier_config>
 </carrier_config_list>
