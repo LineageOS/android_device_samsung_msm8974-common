@@ -73,7 +73,9 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     libqcomvisualizer \
     libqcompostprocbundle \
+    libqcomvoiceprocessingdescriptors \
     libqcomvoiceprocessing \
+    libvolumelistener \
     tinymix
 
 # Display
@@ -121,6 +123,19 @@ PRODUCT_PACKAGES += \
 # Power HAL
 PRODUCT_PACKAGES += \
     power.msm8974
+
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0
+
+# ART
+PRODUCT_PACKAGES += \
+    libandroid_runtime_shim
+
+# Seccomp
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8974-common/seccomp/mediacodec-seccomp.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
+    device/samsung/msm8974-common/seccomp/mediaextractor-seccomp.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
 
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
