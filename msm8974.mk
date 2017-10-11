@@ -89,6 +89,7 @@ PRODUCT_PACKAGES += \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
     libgenlock \
+    libdisplayconfig \
     memtrack.msm8974
 
 # Keylayouts
