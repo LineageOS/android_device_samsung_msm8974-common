@@ -48,6 +48,7 @@
 #include <RilSapSocket.h>
 #include <ril_service.h>
 #include <sap_service.h>
+#include <samsung_ril.h>
 
 extern "C" void
 RIL_onRequestComplete(RIL_Token t, RIL_Errno e, void *response, size_t responselen);
@@ -739,6 +740,8 @@ void RIL_onUnsolicitedResponse(int unsolResponse, const void *data,
         RLOGW("RIL_onUnsolicitedResponse called before RIL_register");
         return;
     }
+
+    remapUnsol(&unsolResponse, data, &datalen);
 
     unsolResponseIndex = unsolResponse - RIL_UNSOL_RESPONSE_BASE;
 

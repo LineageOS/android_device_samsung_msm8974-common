@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2006 The Android Open Source Project
+ * Copyright (C) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -150,7 +151,7 @@ typedef enum {
     RIL_E_ILLEGAL_SIM_OR_ME = 15,               /* network selection failed due to
                                                    illegal SIM or ME */
     RIL_E_MISSING_RESOURCE = 16,                /* no logical channel available */
-    RIL_E_NO_SUCH_ELEMENT = 17,                  /* application not found on SIM */
+    RIL_E_NO_SUCH_ELEMENT = 17,                 /* application not found on SIM */
     RIL_E_DIAL_MODIFIED_TO_USSD = 18,           /* DIAL request modified to USSD */
     RIL_E_DIAL_MODIFIED_TO_SS = 19,             /* DIAL request modified to SS */
     RIL_E_DIAL_MODIFIED_TO_DIAL = 20,           /* DIAL request modified to DIAL with different
@@ -358,7 +359,7 @@ typedef enum {
     PREF_NET_TYPE_LTE_GSM_WCDMA            = 9, /* LTE, GSM/WCDMA */
     PREF_NET_TYPE_LTE_CMDA_EVDO_GSM_WCDMA  = 10, /* LTE, CDMA, EvDo, GSM/WCDMA */
     PREF_NET_TYPE_LTE_ONLY                 = 11, /* LTE only */
-    PREF_NET_TYPE_LTE_WCDMA                = 12,  /* LTE/WCDMA */
+    PREF_NET_TYPE_LTE_WCDMA                = 12, /* LTE/WCDMA */
     PREF_NET_TYPE_TD_SCDMA_ONLY            = 13, /* TD-SCDMA only */
     PREF_NET_TYPE_TD_SCDMA_WCDMA           = 14, /* TD-SCDMA and WCDMA */
     PREF_NET_TYPE_TD_SCDMA_LTE             = 15, /* TD-SCDMA and LTE */
@@ -432,6 +433,7 @@ typedef struct {
     int             numberPresentation; /* 0=Allowed, 1=Restricted, 2=Not Specified/Unknown 3=Payphone */
     char *          name;       /* Remote party name */
     int             namePresentation; /* 0=Allowed, 1=Restricted, 2=Not Specified/Unknown 3=Payphone */
+    long            call_details; /* Samsung call detail additions. Just padding, do not use */
     RIL_UUS_Info *  uusInfo;    /* NULL or Pointer to User-User Signaling Information */
 } RIL_Call;
 
@@ -733,7 +735,7 @@ typedef struct {
     const char * mcc;
     const char * mnc;
     RIL_CarrierMatchType match_type;   /* Specify match type for the carrier.
-                                        * If it’s RIL_MATCH_ALL, match_data is null;
+                                        * If it's RIL_MATCH_ALL, match_data is null;
                                         * otherwise, match_data is the value for the match type.
                                         */
     const char * match_data;
@@ -1111,6 +1113,12 @@ typedef struct
   int              pin1_replaced;   /* applicable to USIM, CSIM & ISIM */
   RIL_PinState     pin1;
   RIL_PinState     pin2;
+  /* Samsung SIM PIN/Unlock fields */
+  int              pin1_num_retries;
+  int              puk1_num_retries;
+  int              pin2_num_retries;
+  int              puk2_num_retries;
+  int              perso_unblock_retries;
 } RIL_AppStatus;
 
 /* Deprecated, use RIL_CardStatus_v6 */
