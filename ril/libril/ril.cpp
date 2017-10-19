@@ -1,6 +1,7 @@
 /* //device/libs/telephony/ril.cpp
 **
 ** Copyright 2006, The Android Open Source Project
+** Copyright 2018, The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -48,6 +49,7 @@
 #include <RilSapSocket.h>
 #include <ril_service.h>
 #include <sap_service.h>
+#include <samsung_ril.h>
 
 extern "C" void
 RIL_onRequestComplete(RIL_Token t, RIL_Errno e, void *response, size_t responselen);
@@ -739,6 +741,8 @@ void RIL_onUnsolicitedResponse(int unsolResponse, const void *data,
         RLOGW("RIL_onUnsolicitedResponse called before RIL_register");
         return;
     }
+
+    remapUnsol(&unsolResponse);
 
     unsolResponseIndex = unsolResponse - RIL_UNSOL_RESPONSE_BASE;
 
