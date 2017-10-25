@@ -1,5 +1,6 @@
 /*
  * Copyright (c) 2016 The Android Open Source Project
+ * Copyright (c) 2018 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -3971,15 +3972,20 @@ SendSmsResult makeSendSmsResult(RadioResponseInfo& responseInfo, int serial, int
     populateResponseInfo(responseInfo, serial, responseType, e);
     SendSmsResult result = {};
 
-    if (response == NULL || responseLen != sizeof(RIL_SMS_Response)) {
-        RLOGE("Invalid response: NULL");
-        if (e == RIL_E_SUCCESS) responseInfo.error = RadioError::INVALID_RESPONSE;
-        result.ackPDU = hidl_string();
-    } else {
+    if (response != NULL && responseLen == sizeof(RIL_SMS_Response)) {
         RIL_SMS_Response *resp = (RIL_SMS_Response *) response;
         result.messageRef = resp->messageRef;
         result.ackPDU = convertCharPtrToHidlString(resp->ackPDU);
         result.errorCode = resp->errorCode;
+    } else if (response != NULL && responseLen == sizeof(RIL_SMS_Response_Ext)) {
+        RIL_SMS_Response *resp = &(((RIL_SMS_Response_Ext *) response)->response);
+        result.messageRef = resp->messageRef;
+        result.ackPDU = convertCharPtrToHidlString(resp->ackPDU);
+        result.errorCode = resp->errorCode;
+    } else {
+        RLOGE("Invalid response: NULL");
+        if (e == RIL_E_SUCCESS) responseInfo.error = RadioError::INVALID_RESPONSE;
+        result.ackPDU = hidl_string();
     }
     return result;
 }
