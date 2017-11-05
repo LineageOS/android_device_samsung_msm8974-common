@@ -113,5 +113,15 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     power.msm8974
 
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    android.system.net.netd@1.0 \
+    libandroid_net
+
+# ART
+PRODUCT_PACKAGES += \
+    libandroid_runtime_shim
+
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
