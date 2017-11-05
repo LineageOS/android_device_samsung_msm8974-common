@@ -60,13 +60,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
     android.hardware.audio.effect@2.0-impl \
-    audiod \
     audio_policy.msm8974 \
     audio.a2dp.default \
     audio.primary.msm8974 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
+    libqcomvoiceprocessingdescriptors \
     libqcomvisualizer \
     libqcompostprocbundle \
     libqcomvoiceprocessing \
@@ -75,12 +75,16 @@ PRODUCT_PACKAGES += \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.composer@2.1-service \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
     copybit.msm8974 \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
+    libgenlock \
     memtrack.msm8974
 
 # Keylayouts
@@ -112,6 +116,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
     power.msm8974
+
+# Netutils
+PRODUCT_PACKAGES += \
+    netutils-wrapper-1.0 \
+    android.system.net.netd@1.0 \
+    libandroid_net
+
+# ART
+PRODUCT_PACKAGES += \
+    libandroid_runtime_shim
+
+# Seccomp
+PRODUCT_COPY_FILES += \
+    device/samsung/msm8974-common/seccomp/mediacodec-seccomp.policy:system/vendor/etc/seccomp_policy/mediacodec.policy \
+    device/samsung/msm8974-common/seccomp/mediaextractor-seccomp.policy:system/vendor/etc/seccomp_policy/mediaextractor.policy
 
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)
