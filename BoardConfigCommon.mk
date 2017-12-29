@@ -49,6 +49,10 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 # of the device.
 MAX_EGL_CACHE_SIZE := 2048*1024
 
+# HIDL
+DEVICE_MANIFEST_FILE := device/samsung/msm8974-common/manifest.xml
+DEVICE_MATRIX_FILE := device/samsung/msm8974-common/compatibility_matrix.xml
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
