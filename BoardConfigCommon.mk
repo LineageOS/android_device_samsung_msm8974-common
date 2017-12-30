@@ -57,5 +57,9 @@ DEVICE_MATRIX_FILE := device/samsung/msm8974-common/compatibility_matrix.xml
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
+# Power HAL
+TARGET_HAS_LEGACY_POWER_STATS := true
+TARGET_HAS_NO_WIFI_STATS := true
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
