@@ -153,5 +153,8 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
+# Get non-open-source specific aspects
+$(call inherit-product-if-exists, vendor/samsung/msm8974-common/msm8974-common-vendor.mk)
+
 # common msm8974
 $(call inherit-product, device/samsung/qcom-common/qcom-common.mk)

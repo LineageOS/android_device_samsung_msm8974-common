@@ -57,3 +57,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
+
+# inherit from the proprietary version
+-include vendor/samsung/msm8974-common/BoardConfigVendor.mk
