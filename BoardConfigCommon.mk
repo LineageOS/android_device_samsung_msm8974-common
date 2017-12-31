@@ -1,4 +1,5 @@
 # Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -57,3 +58,6 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
+
+# inherit from the proprietary version
+-include vendor/samsung/msm8974-common/BoardConfigVendor.mk
