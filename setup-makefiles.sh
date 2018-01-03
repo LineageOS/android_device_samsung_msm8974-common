@@ -40,7 +40,7 @@ fi
 setup_vendor "$DEVICE_COMMON" "$VENDOR" "$CM_ROOT" true
 
 # Copyright headers
-write_headers $BOARD TARGET_BOARD_BOARD
+write_headers $BOARD TARGET_BOARD_PLATFORM
 
 write_makefiles "$MY_DIR"/common-proprietary-files.txt
 
