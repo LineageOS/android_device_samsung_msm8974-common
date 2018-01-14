@@ -33,6 +33,7 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
+WITH_LINEAGE_CHARGER := false
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
