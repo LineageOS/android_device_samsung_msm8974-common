@@ -25,6 +25,15 @@ vendor/lib/libuiblur.so|12dd942092c05d978a2a2db3ea37e0b410427b52
 vendor/firmware/a330_pfp.fw|3e2fcee7276ded819cf2d95864fdd6788a484ee1
 vendor/firmware/a330_pm4.fw|ae739ea812f9e4462d7bba8b9ead5782d4496618
 
+# GPS (OnePlus bacon - lineage-14.1-20170807-nightly-bacon-signed.zip)
+vendor/lib/libloc_api_v02.so|9a8401afc86b54e73aa29995f228fd0243cee793
+vendor/lib/libloc_ds_api.so|ccce9d3c3fa4cadafd13b63c90d3ab8c115dd7b0
+vendor/lib/hw/flp.default.so|c36ec0a3e6563fa8ddb96aaa7d0129249ce1d305
+vendor/lib/libflp.so|20994b3ac3ecd2094698ac98463aed97e3ce54ef
+vendor/lib/libgeofence.so|953c2720c98825cdfb2757839f5f86400c11a2d5
+vendor/lib/libizat_core.so|8d1b8f5c26cc9bcdacb402e253048211a6c07ba1
+vendor/lib/liblbs_core.so|3dea19e84a0d226ea3e5c92ec169f7e0fdbe5699
+
 # Renderscript (Google bullhead - OPR4.170623.006)
 vendor/lib/libRSDriver_adreno.so|2044baf0169177e52aba6d7138f80559ecf2b58d
 vendor/lib/librs_adreno.so|cceaf847d749ac2f1a3af3a1ae6ba653d93e0ed9
