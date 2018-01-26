@@ -1,6 +1,7 @@
 # Copyright 2006 The Android Open Source Project
+# Copyright 2018 The LineageOS Project
 
-ifneq ($(BOARD_PROVIDES_LIBRIL),true)
+ifeq ($(BOARD_PROVIDES_LIBRIL),true)
 
 LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
