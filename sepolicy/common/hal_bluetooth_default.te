@@ -1,0 +1,9 @@
+allow hal_bluetooth_default {
+  bt_fw_file
+  wifi_data_file
+}:file r_file_perms;
+
+allow hal_bluetooth_default bluetooth_device:chr_file w_file_perms;
+allow hal_bluetooth_default firmware_file:dir r_dir_perms;
+allow hal_bluetooth_default proc_bt_sleep:dir w_dir_perms;
+allow hal_bluetooth_default proc_bt_sleep:file w_file_perms;
