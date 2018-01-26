@@ -1,0 +1,3 @@
+allow hal_gnss_default location_data_file:file rw_file_perms;
+
+qmux_socket(hal_gnss_default)
