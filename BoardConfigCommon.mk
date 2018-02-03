@@ -66,6 +66,9 @@ TARGET_FS_CONFIG_GEN := device/samsung/msm8974-common/config.fs
 DEVICE_MANIFEST_FILE := device/samsung/msm8974-common/manifest.xml
 DEVICE_MATRIX_FILE := device/samsung/msm8974-common/compatibility_matrix.xml
 
+# SELinux
+include device/samsung/msm8974-common/sepolicy/sepolicy.mk
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
