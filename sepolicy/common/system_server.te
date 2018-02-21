@@ -10,3 +10,4 @@ allow system_server qmuxd_socket:dir w_dir_perms;
 allow system_server qmuxd_socket:sock_file { create setattr write };
 allow system_server qti_debugfs:file r_file_perms;
 allow system_server sensors_device:chr_file r_file_perms;
+allow system_server sysfs_mdnie:file rw_file_perms;
