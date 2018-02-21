@@ -1,5 +1,6 @@
 type proc_bt_sleep, fs_type;
 
+type sysfs_mdnie, fs_type, sysfs_type;
 type sysfs_sec, fs_type, sysfs_type;
 type sysfs_wifi_writeable, fs_type, sysfs_type;
 

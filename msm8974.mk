@@ -58,6 +58,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true
 
+# Advanced Display
+PRODUCT_PACKAGES += \
+    AdvancedDisplay
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
