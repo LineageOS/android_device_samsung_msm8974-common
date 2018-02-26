@@ -77,6 +77,11 @@ include device/samsung/msm8974-common/sepolicy/sepolicy.mk
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
+# Power
+TARGET_HAS_LEGACY_POWER_STATS := true
+TARGET_HAS_NO_WIFI_STATS := true
+TARGET_USES_INTERACTION_BOOST := true
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
