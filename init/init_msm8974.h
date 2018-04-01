@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
+   Copyright (c) 2018, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -32,5 +33,7 @@
 
 void init_target_properties();
 void property_override(char const prop[], char const value[]);
+void property_override_dual(char const system_prop[],
+        char const vendor_prop[], char const value[]);
 
 #endif /* __INIT_MSM8974__H__ */
