@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa17e8c0_b6a41971",
+        "filename": "system.prop",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 444
+      },
+      "writtenOn": "2018-04-24T10:03:59Z",
+      "side": 1,
+      "message": "These props don\u0027t exist anymore in Oreo",
+      "revId": "9b9c1b5c35147b9a78b6c96ad8aa2beb99967819",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
