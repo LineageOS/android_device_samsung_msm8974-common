@@ -18,9 +18,6 @@ vendor/lib/libllvm-qcom.so|fc96c949b662fb34b287a4c0aa194984fbb57d7d
 vendor/lib/libsc-a3xx.so|231201bcfead5f930537d2fba22d89b00e673386
 vendor/lib/libscale.so|b44f44c633fa404d10e76aaa23593b516e08e2b8
 
-# Graphics blur (OnePlus bacon - Cyanogen OS cm-13.1.2-ZNH2KAS3P0)
-vendor/lib/libuiblur.so|12dd942092c05d978a2a2db3ea37e0b410427b52
-
 # Graphics firmware (same everywhere, so lets say Samsung G900FXXS1CQI4_G900FPHN1CQI2_PHN)
 vendor/firmware/a330_pfp.fw|3e2fcee7276ded819cf2d95864fdd6788a484ee1
 vendor/firmware/a330_pm4.fw|ae739ea812f9e4462d7bba8b9ead5782d4496618
