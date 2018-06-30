@@ -31,6 +31,8 @@
     </carrier_config>
     <carrier_config mcc="311" mnc="480">
         <boolean name="disable_cdma_activation_code_bool" value="true" />
+        <int name="lte_earfcns_rsrp_boost_int" value="0" />
+        <string-array name="boosted_lte_earfcns_string_array" num="0" />
     </carrier_config>
 
     <!-- Sprint hackery -->
