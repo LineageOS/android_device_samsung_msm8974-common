@@ -22,6 +22,7 @@
         <boolean name="world_phone_bool" value="true" />
     </carrier_config>
 
+    <!-- Verizon hackery -->
     <carrier_config mcc="204" mnc="04" gid1="BAE0000000000000">
         <boolean name="disable_cdma_activation_code_bool" value="true" />
     </carrier_config>
@@ -32,6 +33,7 @@
         <boolean name="disable_cdma_activation_code_bool" value="true" />
     </carrier_config>
 
+    <!-- Sprint hackery -->
     <carrier_config mcc="310" mnc="120">
         <boolean name="sprint_mwi_quirk" value="true" />
     </carrier_config>
