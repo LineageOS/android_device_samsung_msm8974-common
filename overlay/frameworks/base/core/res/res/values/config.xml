@@ -19,6 +19,16 @@
 
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
+
+<!-- The http://pool.ntp.org project is a big virtual cluster of timeservers.
+	 The device will receive the IP address of an NTP Server in close proximity
+	 to its location. 
+	 
+	 Operating System and Software vendors must absolutely not use the default
+	 pool.ntp.org zone names. So it makes sense to leverage the pool's existing
+	 Android vendor name.
+	 -->
+
 <resources>
 
     <!-- Values for GPS configuration -->
@@ -26,7 +36,7 @@
         <item>XTRA_SERVER_1=https://xtrapath1.izatcloud.net/xtra3grc.bin</item>
         <item>XTRA_SERVER_2=https://xtrapath2.izatcloud.net/xtra3grc.bin</item>
         <item>XTRA_SERVER_3=https://xtrapath3.izatcloud.net/xtra3grc.bin</item>
-        <item>NTP_SERVER=north-america.pool.ntp.org</item>
+        <item>NTP_SERVER=1.android.pool.ntp.org</item>
         <item>SUPL_ES=0</item>
         <item>SUPL_HOST=supl.google.com</item>
         <item>SUPL_PORT=7275</item>
