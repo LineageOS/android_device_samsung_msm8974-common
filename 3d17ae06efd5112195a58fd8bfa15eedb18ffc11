@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "83e34a31_13f9d45e",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 18903
+      },
+      "writtenOn": "2018-07-17T19:36:51Z",
+      "side": 1,
+      "message": "Missed one. Needs to go.",
+      "revId": "3d17ae06efd5112195a58fd8bfa15eedb18ffc11",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
