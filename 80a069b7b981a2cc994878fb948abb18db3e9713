@@ -1,0 +1,188 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fd60af88_5ba2a51d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "This is all a fault assumption that we have ever used this default. We have always specified a \"trusted server\"",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 59
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f1a94c86_13240738",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "The \"some reason\" is aligning to pixel devices.",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 26
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e320a8ca_67132bd9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "This is the only real justification for the change.",
+      "range": {
+        "startLine": 36,
+        "startChar": 20,
+        "endLine": 38,
+        "endChar": 39
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "326a15f4_068ac140",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "Incorrect assumption. China overlays were created to specify for them a SUPL server that is reachable from their locale, tailoring the ntp secure server was closer was a nice to have (vice need to have -- there is only one back and forth in the message exchange and the protocol is designed to compensate for the latency).",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 69
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d7fba35f_2f0a7b3f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "measures?",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 51,
+        "endChar": 13
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c09b8817_c7db8255",
+        "filename": "gps/etc/gps.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "Meaningless change, but remove this comment at a minimum.\n\n# Worldwide\n\nis sufficient",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 34
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "45ebb0f8_ee4b93ef",
+        "filename": "gps/etc/gps.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "no",
+      "range": {
+        "startLine": 25,
+        "startChar": 14,
+        "endLine": 25,
+        "endChar": 15
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "94879882_5465f254",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 1,
+      "message": "remove this addition",
+      "range": {
+        "startLine": 22,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 5
+      },
+      "revId": "80a069b7b981a2cc994878fb948abb18db3e9713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

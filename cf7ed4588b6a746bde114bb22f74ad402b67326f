@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4b1f3fdb_eee447cd",
+        "filename": "overlay/frameworks/base/core/res/res/values-mcc460/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-07-17T12:29:43Z",
+      "side": 0,
+      "message": "You cannot do this. This is a string array which doesn\u0027t have a concept of inheritance, all fields have to be present in all overlays. What you just did is send China to time.android.com.",
+      "range": {
+        "startLine": 29,
+        "startChar": 8,
+        "endLine": 29,
+        "endChar": 49
+      },
+      "revId": "cf7ed4588b6a746bde114bb22f74ad402b67326f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
