@@ -46,6 +46,7 @@ cc_library_shared {
 
 cc_binary {
     name: "android.hardware.sensors@1.0-service.samsung8974",
+    defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     vendor: true,
     init_rc: ["android.hardware.sensors@1.0-service.samsung8974.rc"],
@@ -61,4 +62,9 @@ cc_binary {
         "libhidltransport",
         "android.hardware.sensors@1.0",
     ],
+    arch: {
+        arm: {
+            cflags: ["-DARCH_ARM_32"],
+        },
+    },
 }
