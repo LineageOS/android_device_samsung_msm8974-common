@@ -89,5 +89,8 @@ TARGET_USES_INTERACTION_BOOST := true
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
+# Enable SVELTE memory allocation configuration
+MALLOC_SVELTE := true
+
 # inherit from the proprietary version
 -include vendor/samsung/msm8974-common/BoardConfigVendor.mk
