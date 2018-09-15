@@ -97,6 +97,14 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8974 \
     memtrack.msm8974
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@1.0-impl \
+    camera.msm8974 \
+    libxml2 \
+    Snap
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
