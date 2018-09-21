@@ -170,7 +170,8 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl
+    android.hardware.sensors@1.0-impl.samsung8974 \
+    android.hardware.sensors@1.0-service.samsung8974
 
 # USB
 PRODUCT_PACKAGES += \
