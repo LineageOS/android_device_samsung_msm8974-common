@@ -3,7 +3,7 @@ cc_library_static {
     vendor: true,
     srcs: [
         "multihal.cpp",
-        "SensorEventQueue.cpp"
+        "SensorEventQueue.cpp",
     ],
     header_libs: [
         "libhardware_headers",
@@ -12,7 +12,11 @@ cc_library_static {
         "liblog",
         "libcutils",
         "libutils",
-        "libdl"
+        "libdl",
     ],
     export_include_dirs: ["."],
+    cflags: [
+        "-Wall",
+        "-Werror",
+    ],
 }
