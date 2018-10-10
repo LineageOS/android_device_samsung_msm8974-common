@@ -88,6 +88,9 @@ include device/samsung/msm8974-common/sepolicy/sepolicy.mk
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8974
 
+# Netd
+TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
+
 # Power
 TARGET_HAS_LEGACY_POWER_STATS := true
 TARGET_HAS_NO_WLAN_STATS := true
