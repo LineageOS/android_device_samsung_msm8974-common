@@ -61,6 +61,10 @@
 # sysfs - mdnie
 /sys/devices/virtual/mdnie/mdnie(/.*)?                  u:object_r:sysfs_mdnie:s0
 
+# sysfs - net
+/sys/devices/msm_sdcc\.[0-9]/mmc_host/.*/net(/.*)?      u:object_r:sysfs_net:s0
+/sys/devices/virtual/net(/.*)?                          u:object_r:sysfs_net:s0
+
 # sysfs - sec
 /sys/devices/platform/sec-thermistor(/.*)?              u:object_r:sysfs_sec_thermistor:s0
 /sys/devices/virtual/sec/bamdmux(/.*)?                  u:object_r:sysfs_sec_bamdmux:s0
