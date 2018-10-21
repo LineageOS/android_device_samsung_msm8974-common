@@ -33,13 +33,10 @@
 /sys/devices/battery.[0-9]+/power_supply/battery(/.*)?           u:object_r:sysfs_batteryinfo:s0
 /sys/module/dhd/parameters/firmware_path                         u:object_r:sysfs_wifi_writeable:s0
 /sys/module/dhd/parameters/nvram_path                            u:object_r:sysfs_wifi_writeable:s0
+/sys/devices/mdp\.[0-9]+(/.*)?                                   u:object_r:sysfs_graphics:s0
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/virtual/camera(/.*)?                                u:object_r:sysfs_camera:s0
+/sys/devices/virtual/graphics(/.*)?                              u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/lcd(/.*)?                                   u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/mdnie(/.*)?                                 u:object_r:sysfs_graphics:s0
 /sys/devices/virtual/sec/sec_key/hall_irq_ctrl                   u:object_r:sysfs_sec:s0
-
-# mdnie sysfs
-/sys/devices/virtual/lcd/panel/panel/auto_brightness    u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/accessibility          u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/mode                   u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/outdoor                u:object_r:sysfs_mdnie:s0
-/sys/devices/virtual/mdnie/mdnie/scenario               u:object_r:sysfs_mdnie:s0
