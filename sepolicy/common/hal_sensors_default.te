@@ -1,0 +1,2 @@
+allow hal_sensors_default sysfs_graphics:dir search;
+allow hal_sensors_default sysfs_graphics:file r_file_perms;

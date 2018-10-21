@@ -37,5 +37,11 @@
 /sys/module/dhd/parameters/firmware_path                         u:object_r:sysfs_wifi_writeable:s0
 /sys/module/dhd/parameters/nvram_path                            u:object_r:sysfs_wifi_writeable:s0
 
+# sysfs - graphics/panel
+/sys/class/mhl(/.*)?                                    u:object_r:sysfs_graphics:s0
+/sys/devices/mdp\.[0-9](/.*)?                           u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/graphics/fb0/csc_cfg               u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/lcd/panel(/.*)?                    u:object_r:sysfs_graphics:s0
+
 # sysfs - mdnie
 /sys/devices/virtual/mdnie/mdnie(/.*)?                  u:object_r:sysfs_mdnie:s0
