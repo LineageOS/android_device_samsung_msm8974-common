@@ -1,10 +1,18 @@
+selinux_check_context(init)
+
+allow init hal_sensors_hwservice:hwservice_manager { add find };
+
+allow init hidl_base_hwservice:hwservice_manager add;
+
+allow init iio_device:chr_file ioctl;
+
+allow init sysfs_graphics:file r_file_perms;
+
 allow init {
     sysfs_iio
     sysfs_sec_tsp
     sysfs_sensors
 }:lnk_file read;
-
-allow init sysfs_graphics:file r_file_perms;
 
 allow init {
     sysfs_input
@@ -12,11 +20,15 @@ allow init {
 }:file rw_file_perms;
 
 allow init {
+    sysfs_audio
     sysfs_batteryinfo
     sysfs_bluetooth_writable
+    sysfs_camera
     sysfs_graphics
+    sysfs_hal_pwr
     sysfs_iio
     sysfs_input
+    sysfs_kgsl
     sysfs_leds
     sysfs_mdnie
     sysfs_msmuart_file
@@ -32,10 +44,18 @@ allow init {
     sysfs_sec_tsp
     sysfs_sensors
     sysfs_socinfo
+    sysfs_usb_otg
+    sysfs_usb_storage_gadget
+    sysfs_wifi_writeable
 }:file setattr;
 
 allow init {
+    sysfs_cpu_boost
+    sysfs_devices_system_cpu
+    sysfs_lowmemorykiller
     sysfs_mmc_host
     sysfs_msm_perf
+    sysfs_msm_power
     sysfs_sec_key
+    sysfs_thermal
 }:file w_file_perms;
