@@ -1,3 +1,9 @@
+# This really is necessary for init.qcom.rc to manually restorecon the
+# /data/data/com.android.providers.telephony/(databases|shared_prefs)
+# symlinks. Without the manual restorecon, we would have to allow rild
+# to read any system_data_file:lnk_file.
+selinux_check_context(init)
+
 allow init {
     sysfs_iio
     sysfs_sec_tsp
@@ -9,11 +15,15 @@ allow init sysfs_input:file rw_file_perms;
 allow init sysfs_graphics:file r_file_perms;
 
 allow init {
+    sysfs_audio
     sysfs_batteryinfo
     sysfs_bluetooth_writable
+    sysfs_camera
     sysfs_graphics
+    sysfs_hal_pwr
     sysfs_iio
     sysfs_input
+    sysfs_kgsl
     sysfs_leds
     sysfs_mdnie
     sysfs_msmuart_file
@@ -31,10 +41,16 @@ allow init {
     sysfs_socinfo
     sysfs_usb_otg
     sysfs_usb_storage_gadget
+    sysfs_wifi_writeable
 }:file setattr;
 
 allow init {
+    sysfs_cpu_boost
+    sysfs_devices_system_cpu
+    sysfs_lowmemorykiller
     sysfs_mmc_host
     sysfs_msm_perf
+    sysfs_msm_power
     sysfs_sec_key
+    sysfs_thermal
 }:file w_file_perms;
