@@ -1,3 +1,4 @@
+binder_call(system_server, init)
 get_prop(system_server, alarm_boot_prop)
 
 allow system_server efs_file:dir search;
