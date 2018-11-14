@@ -7,8 +7,6 @@ allow init sysfs_input:file rw_file_perms;
 
 allow init sysfs_graphics:file r_file_perms;
 
-allow init sysfs_sec_key:file w_file_perms;
-
 allow init {
     sysfs_batteryinfo
     sysfs_graphics
@@ -27,3 +25,8 @@ allow init {
     sysfs_sec_touchkey
     sysfs_sec_tsp
 }:file setattr;
+
+allow init {
+    sysfs_msm_perf
+    sysfs_sec_key
+}:file w_file_perms;
