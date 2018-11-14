@@ -36,6 +36,7 @@
 /sys/devices/.*/power_supply(/.*)?                               u:object_r:sysfs_batteryinfo:s0
 /sys/devices/battery\.[0-9]+(/.*)?                               u:object_r:sysfs_batteryinfo:s0
 /sys/devices/i2c.*/.*-charger(/.*)?                              u:object_r:sysfs_batteryinfo:s0
+/sys/devices/i2c.*/.*-led(/.*)?                                  u:object_r:sysfs_leds:s0
 /sys/devices/mdp\.[0-9]+(/.*)?                                   u:object_r:sysfs_graphics:s0
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/virtual/camera(/.*)?                                u:object_r:sysfs_camera:s0
