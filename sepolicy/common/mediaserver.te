@@ -1,4 +1,5 @@
 allow mediaserver camera_socket:sock_file write;
+allow mediaserver device:dir r_dir_perms;
 allow mediaserver hal_camera_hwservice:hwservice_manager find;
 allow mediaserver mm-qcamerad:unix_dgram_socket sendto;
 allow mediaserver sysfs_camera:dir search;
