@@ -46,6 +46,9 @@
 # sysfs - block/storage
 /sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/stat        u:object_r:sysfs_disk_stat:s0
 
+# sysfs - cpu/perf
+/sys/module/msm_pm/modes/cpu[0-9](/.*)?                 u:object_r:sysfs_msm_perf:s0
+
 # sysfs - graphics/panel
 /sys/class/mhl(/.*)?                                    u:object_r:sysfs_graphics:s0
 /sys/devices/mdp\.[0-9](/.*)?                           u:object_r:sysfs_graphics:s0
