@@ -1,3 +1,4 @@
+allow mediaserver device:dir r_dir_perms;
 allow mediaserver sysfs_camera:dir search;
 allow mediaserver sysfs_camera:file r_file_perms;
 allow mediaserver vendor_execmod_file:file { execmod rx_file_perms };
