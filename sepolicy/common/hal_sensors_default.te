@@ -1,6 +1,7 @@
 allow hal_sensors_default {
     sysfs_batteryinfo
     sysfs_graphics
+    sysfs_leds
 }:dir search;
 
 allow hal_sensors_default {

@@ -9,5 +9,6 @@ allow init {
     sysfs_graphics
     sysfs_iio
     sysfs_input
+    sysfs_leds
     sysfs_mdnie
 }:file setattr;
