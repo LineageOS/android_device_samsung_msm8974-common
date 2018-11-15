@@ -1,6 +1,7 @@
 allow init {
     sysfs_iio
     sysfs_sec_tsp
+    sysfs_sensors
 }:lnk_file read;
 
 allow init sysfs_input:file rw_file_perms;
@@ -24,6 +25,7 @@ allow init {
     sysfs_sec_thermistor
     sysfs_sec_touchkey
     sysfs_sec_tsp
+    sysfs_sensors
 }:file setattr;
 
 allow init {
