@@ -33,7 +33,6 @@
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/virtual/camera(/.*)?                                u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input(/.*)?                                 u:object_r:sysfs_input:s0
-/sys/devices/virtual/sec/sec_key/hall_irq_ctrl                   u:object_r:sysfs_sec:s0
 /sys/module/dhd/parameters/firmware_path                         u:object_r:sysfs_wifi_writeable:s0
 /sys/module/dhd/parameters/nvram_path                            u:object_r:sysfs_wifi_writeable:s0
 
@@ -60,3 +59,15 @@
 
 # sysfs - mdnie
 /sys/devices/virtual/mdnie/mdnie(/.*)?                  u:object_r:sysfs_mdnie:s0
+
+# sysfs - sec
+/sys/devices/platform/sec-thermistor(/.*)?              u:object_r:sysfs_sec_thermistor:s0
+/sys/devices/virtual/sec/bamdmux(/.*)?                  u:object_r:sysfs_sec_bamdmux:s0
+/sys/devices/virtual/sec/led(/.*)?                      u:object_r:sysfs_sec_led:s0
+/sys/devices/virtual/sec/sec_barcode_emul(/.*)?         u:object_r:sysfs_sec_barcode_emul:s0
+/sys/devices/virtual/sec/sec_epen(/.*)?                 u:object_r:sysfs_sec_epen:s0
+/sys/devices/virtual/sec/sec_ir(/.*)?                   u:object_r:sysfs_sec_ir:s0
+/sys/devices/virtual/sec/sec_key(/.*)?                  u:object_r:sysfs_sec_key:s0
+/sys/devices/virtual/sec/sec_touchkey(/.*)?             u:object_r:sysfs_sec_touchkey:s0
+/sys/devices/virtual/sec/switch(/.*)?                   u:object_r:sysfs_sec_switch:s0
+/sys/devices/virtual/sec/tsp(/.*)?                      u:object_r:sysfs_sec_tsp:s0
