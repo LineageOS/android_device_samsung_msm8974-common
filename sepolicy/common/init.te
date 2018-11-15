@@ -1,8 +1,13 @@
-allow init sysfs_iio:lnk_file read;
+allow init {
+    sysfs_iio
+    sysfs_sec_tsp
+}:lnk_file read;
 
 allow init sysfs_input:file rw_file_perms;
 
 allow init sysfs_graphics:file r_file_perms;
+
+allow init sysfs_sec_key:file w_file_perms;
 
 allow init {
     sysfs_batteryinfo
@@ -11,4 +16,14 @@ allow init {
     sysfs_input
     sysfs_leds
     sysfs_mdnie
+    sysfs_sec_bamdmux
+    sysfs_sec_barcode_emul
+    sysfs_sec_epen
+    sysfs_sec_ir
+    sysfs_sec_key
+    sysfs_sec_led
+    sysfs_sec_switch
+    sysfs_sec_thermistor
+    sysfs_sec_touchkey
+    sysfs_sec_tsp
 }:file setattr;

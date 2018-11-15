@@ -5,7 +5,16 @@ type sysfs_hal_pwr, fs_type, sysfs_type;
 type sysfs_iio, fs_type, sysfs_type;
 type sysfs_input, fs_type, sysfs_type;
 type sysfs_mdnie, fs_type, sysfs_type;
-type sysfs_sec, fs_type, sysfs_type;
+type sysfs_sec_bamdmux, fs_type, sysfs_type;
+type sysfs_sec_barcode_emul, fs_type, sysfs_type;
+type sysfs_sec_epen, fs_type, sysfs_type;
+type sysfs_sec_ir, fs_type, sysfs_type;
+type sysfs_sec_key, fs_type, sysfs_type;
+type sysfs_sec_led, fs_type, sysfs_type;
+type sysfs_sec_switch, fs_type, sysfs_type;
+type sysfs_sec_thermistor, fs_type, sysfs_type;
+type sysfs_sec_touchkey, fs_type, sysfs_type;
+type sysfs_sec_tsp, fs_type, sysfs_type;
 type sysfs_wifi_writeable, fs_type, sysfs_type;
 
 type bt_fw_file, file_type;
