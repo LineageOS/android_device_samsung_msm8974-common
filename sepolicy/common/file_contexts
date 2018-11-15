@@ -82,3 +82,6 @@
 /sys/devices/virtual/sec/sec_touchkey(/.*)?             u:object_r:sysfs_sec_touchkey:s0
 /sys/devices/virtual/sec/switch(/.*)?                   u:object_r:sysfs_sec_switch:s0
 /sys/devices/virtual/sec/tsp(/.*)?                      u:object_r:sysfs_sec_tsp:s0
+
+# sysfs - sensors
+/sys/devices/virtual/sensors(/.*)?                      u:object_r:sysfs_sensors:s0
