@@ -1,9 +1,12 @@
 allow init sysfs_iio:lnk_file read;
 
+allow init sysfs_input:file rw_file_perms;
+
 allow init sysfs_graphics:file r_file_perms;
 
 allow init {
     sysfs_graphics
     sysfs_iio
+    sysfs_input
     sysfs_mdnie
 }:file setattr;
