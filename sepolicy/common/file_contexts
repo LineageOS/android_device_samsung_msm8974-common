@@ -38,6 +38,7 @@
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/virtual/camera(/.*)?                                u:object_r:sysfs_camera:s0
 /sys/devices/virtual/graphics(/.*)?                              u:object_r:sysfs_graphics:s0
+/sys/devices/virtual/input(/.*)?                                 u:object_r:sysfs_input:s0
 /sys/devices/virtual/lcd(/.*)?                                   u:object_r:sysfs_graphics:s0
 /sys/devices/virtual/mdnie(/.*)?                                 u:object_r:sysfs_graphics:s0
 /sys/devices/virtual/sec/sec_key/hall_irq_ctrl                   u:object_r:sysfs_sec:s0
