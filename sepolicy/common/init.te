@@ -10,6 +10,7 @@ allow init sysfs_graphics:file r_file_perms;
 
 allow init {
     sysfs_batteryinfo
+    sysfs_bluetooth_writable
     sysfs_graphics
     sysfs_iio
     sysfs_input
