@@ -30,6 +30,7 @@ allow init {
 }:file setattr;
 
 allow init {
+    sysfs_mmc_host
     sysfs_msm_perf
     sysfs_sec_key
 }:file w_file_perms;
