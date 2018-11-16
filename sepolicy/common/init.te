@@ -13,6 +13,7 @@ allow init {
 
 allow init {
     sysfs_batteryinfo
+    sysfs_bluetooth_writable
     sysfs_graphics
     sysfs_iio
     sysfs_input
