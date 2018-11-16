@@ -44,6 +44,7 @@
 /sys/devices/msm_dwc3/power_supply(/.*)?                u:object_r:sysfs_batteryinfo:s0
 
 # sysfs - block/storage
+/sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/bkops_en    u:object_r:sysfs_io_sched_tuneable:s0
 /sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/stat        u:object_r:sysfs_disk_stat:s0
 
 # sysfs - cpu/perf
