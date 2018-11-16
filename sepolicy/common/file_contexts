@@ -20,6 +20,7 @@
 
 # executeables
 /system/vendor/bin/macloader                            u:object_r:macloader_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@1\.0-service.samsung8974        u:object_r:hal_sensors_default_exec:s0
 
 # firmware
 /system/vendor/firmware/bcm(.*).hcd                     u:object_r:bt_fw_file:s0
