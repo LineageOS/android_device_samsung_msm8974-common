@@ -26,6 +26,7 @@ allow init {
     sysfs_sec_touchkey
     sysfs_sec_tsp
     sysfs_sensors
+    sysfs_socinfo
 }:file setattr;
 
 allow init {
