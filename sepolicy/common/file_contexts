@@ -30,7 +30,9 @@
 /data/cam_socket3                                       u:object_r:camera_socket:s0
 
 # sysfs
+/sys/bus/iio(/.*)?                                               u:object_r:sysfs_iio:s0
 /sys/class/mhl(/.*)?                                             u:object_r:sysfs_graphics:s0
+/sys/devices/.*/iio:device[0-9]+(/.*)?                           u:object_r:sysfs_iio:s0
 /sys/devices/battery.[0-9]+/power_supply/battery(/.*)?           u:object_r:sysfs_batteryinfo:s0
 /sys/devices/mdp\.[0-9]+(/.*)?                                   u:object_r:sysfs_graphics:s0
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
