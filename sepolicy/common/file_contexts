@@ -31,6 +31,7 @@
 /data/cam_socket3                                       u:object_r:camera_socket:s0
 
 # sysfs
+/sys/devices/[a-f0-9]+\.uart(/.*)?                               u:object_r:sysfs_msmuart_file:s0
 /sys/devices/platform/bcm[0-9]+_bluetooth/rfkill/rfkill0/state   u:object_r:sysfs_bluetooth_writable:s0
 /sys/devices/virtual/camera(/.*)?                                u:object_r:sysfs_camera:s0
 /sys/devices/virtual/input(/.*)?                                 u:object_r:sysfs_input:s0
