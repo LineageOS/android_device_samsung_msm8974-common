@@ -17,5 +17,8 @@
 include device/qcom/sepolicy-legacy/sepolicy.mk
 
 # Board specific SELinux policy variable definitions
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/samsung/msm8974-common/sepolicy/private
+
 BOARD_SEPOLICY_DIRS += \
     device/samsung/msm8974-common/sepolicy/common
