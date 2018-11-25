@@ -1,1 +1,2 @@
+allow system_app sysfs_mdnie:dir search;
 allow system_app sysfs_mdnie:file rw_file_perms;
