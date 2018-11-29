@@ -10,10 +10,6 @@ allow init {
     sysfs_sensors
 }:lnk_file read;
 
-allow init sysfs_input:file rw_file_perms;
-
-allow init sysfs_graphics:file r_file_perms;
-
 allow init {
     sysfs_audio
     sysfs_batteryinfo
