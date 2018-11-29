@@ -1,1 +1,2 @@
 allow hal_wifi_hostapd_default sysfs_net:lnk_file { getattr read };
+allow hal_wifi_hostapd_default wlan_device:chr_file read;

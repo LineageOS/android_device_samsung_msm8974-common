@@ -1,4 +1,4 @@
-type proc_bt_sleep, fs_type;
+type proc_bt_sleep, fs_type, proc_type;
 
 type sysfs_camera, fs_type, sysfs_type;
 type sysfs_hal_pwr, fs_type, sysfs_type;

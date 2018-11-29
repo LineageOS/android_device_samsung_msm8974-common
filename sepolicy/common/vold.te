@@ -1,6 +1,9 @@
-allow vold block_device:blk_file getattr;
-allow vold cache_block_device:blk_file getattr;
-allow vold efs_block_device:blk_file getattr;
 allow vold efs_file:dir rw_dir_perms;
 allow vold efs_file:file create;
-allow vold system_block_device:blk_file getattr;
+
+allow vold {
+    block_device
+    cache_block_device
+    efs_block_device
+    system_block_device
+}:blk_file getattr;
