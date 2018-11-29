@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9c4ad28d_45aea009",
+        "filename": "sepolicy/private/system_app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 15173
+      },
+      "writtenOn": "2018-11-29T15:20:36Z",
+      "side": 1,
+      "message": "This seems... odd.",
+      "revId": "2cfa4fb8f8f85a5c655277c882718165384502a2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
