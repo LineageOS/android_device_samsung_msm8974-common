@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "511bddce_c5991a77",
+        "filename": "sepolicy/common/init.te",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 20614
+      },
+      "writtenOn": "2018-11-30T12:11:03Z",
+      "side": 1,
+      "message": "Unecessary, brings a merge conflict",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 44
+      },
+      "revId": "27199e0f6f54950357c3a23bf0098c8163bdab89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
