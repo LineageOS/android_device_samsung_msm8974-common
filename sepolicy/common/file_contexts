@@ -89,3 +89,6 @@
 
 # sysfs - sensors
 /sys/devices/virtual/sensors(/.*)?                      u:object_r:sysfs_sensors:s0
+
+# sysfs - usb
+/sys/devices/virtual/host_notify/usb_otg(/.*)?               u:object_r:sysfs_usb_otg:s0

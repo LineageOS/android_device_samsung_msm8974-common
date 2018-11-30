@@ -29,6 +29,7 @@ allow init {
     sysfs_sec_tsp
     sysfs_sensors
     sysfs_socinfo
+    sysfs_usb_otg
 }:file setattr;
 
 allow init {
