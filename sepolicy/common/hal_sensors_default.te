@@ -14,6 +14,7 @@ allow hal_sensors_default {
     sysfs_batteryinfo
     sysfs_graphics
     sysfs_leds
+    sysfs_sec_thermistor
 }:dir search;
 
 allow hal_sensors_default {
