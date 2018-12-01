@@ -21,4 +21,5 @@ type sysfs_wifi_writeable, fs_type, sysfs_type;
 
 type bt_fw_file, file_type;
 type nfc_fw_file, file_type;
+type vendor_execmod_file, file_type;
 type wifi_efs_file, file_type;
