@@ -178,6 +178,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.samsung8974 \
     android.hardware.sensors@1.0-service.samsung8974
 
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@2.0-service.samsung
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
