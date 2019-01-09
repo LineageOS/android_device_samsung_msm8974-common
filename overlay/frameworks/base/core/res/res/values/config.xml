@@ -20,6 +20,8 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
+    <!-- Disable rounded corners on windows to improve graphics performance -->
+    <bool name="config_supportsRoundedCornersOnWindows">false</bool>
 
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
