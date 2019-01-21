@@ -46,12 +46,10 @@
 
 # sysfs - block/storage
 /sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/bkops_en    u:object_r:sysfs_io_sched_tuneable:s0
-/sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/mmc[0-9]:[0-9]+/block/mmcblk[0-9]/stat        u:object_r:sysfs_disk_stat:s0
 /sys/devices/msm_sdcc\.[0-9]/mmc_host/mmc[0-9]/power(/.*)?                                   u:object_r:sysfs_mmc_host:s0
 
 # sysfs - cpu/perf
 /sys/devices/system/soc/soc0(/.*)?                      u:object_r:sysfs_socinfo:s0
-/sys/module/msm_pm/modes/cpu[0-9](/.*)?                 u:object_r:sysfs_msm_perf:s0
 
 # sysfs - graphics/panel
 /sys/class/mhl(/.*)?                                    u:object_r:sysfs_graphics:s0
@@ -66,7 +64,6 @@
 # sysfs - leds
 /sys/devices/i2c\.[0-9]+/i2c-[0-9]+/[0-9]+-[a-z0-9]+/leds(/.*)?  u:object_r:sysfs_leds:s0
 /sys/devices/i2c\.[0-9]+/i2c-[0-9]+/[0-9]+-[a-z0-9]+/max[a-z0-9]+-led/leds(/.*)? u:object_r:sysfs_leds:s0
-/sys/devices/leds-qpnp-[0-9]+/leds(/.*)?                         u:object_r:sysfs_leds:s0
 
 # sysfs - mdnie
 /sys/devices/virtual/mdnie/mdnie(/.*)?                  u:object_r:sysfs_mdnie:s0
@@ -91,5 +88,4 @@
 /sys/devices/virtual/sensors(/.*)?                      u:object_r:sysfs_sensors:s0
 
 # sysfs - usb
-/sys/devices/msm_dwc3/[a-f0-9]+\.dwc3/gadget/lun[0-9]+(/.*)? u:object_r:sysfs_usb_storage_gadget:s0
 /sys/devices/virtual/host_notify/usb_otg(/.*)?               u:object_r:sysfs_usb_otg:s0

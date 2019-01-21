@@ -36,7 +36,6 @@ allow init {
     sysfs_sensors
     sysfs_socinfo
     sysfs_usb_otg
-    sysfs_usb_storage_gadget
     sysfs_wifi_writeable
 }:file setattr;
 
