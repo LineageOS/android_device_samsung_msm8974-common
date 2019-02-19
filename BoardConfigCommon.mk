@@ -1,5 +1,5 @@
 # Copyright (C) 2012 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -46,9 +46,6 @@ BOARD_BATTERY_DEVICE_NAME := "battery"
 BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
 WITH_LINEAGE_CHARGER := false
-
-# CMHW
-BOARD_HARDWARE_CLASS += device/samsung/msm8974-common/lineagehw
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
