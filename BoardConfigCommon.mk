@@ -47,9 +47,6 @@ BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
 BOARD_CHARGING_CMDLINE_VALUE := "true"
 WITH_LINEAGE_CHARGER := false
 
-# CMHW
-BOARD_HARDWARE_CLASS += device/samsung/msm8974-common/lineagehw
-
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
   ifneq ($(TARGET_BUILD_VARIANT),eng)
