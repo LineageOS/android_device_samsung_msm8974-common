@@ -1,9 +1,0 @@
-allow hal_lineage_livedisplay_default {
-    sysfs_graphics
-    sysfs_mdnie
-}:dir search;
-
-allow hal_lineage_livedisplay_default {
-    sysfs_graphics
-    sysfs_mdnie
-}:file rw_file_perms;
