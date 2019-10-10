@@ -28,6 +28,8 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <android-base/strings.h>
+
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
@@ -36,6 +38,17 @@
 #include "init_msm8974.h"
 
 using android::init::property_set;
+
+// copied from build/tools/releasetools/ota_from_target_files.py
+// but with "." at the end and empty entry
+std::vector<std::string> ro_product_props_default_source_order = {
+    "",
+    "product.",
+    "product_services.",
+    "odm.",
+    "vendor.",
+    "system.",
+};
 
 void set_rild_libpath(char const variant[])
 {
@@ -76,20 +89,21 @@ void gsm_properties(const char default_network[],
     property_set("telephony.lteOnGsmDevice", "1");
 }
 
-void property_override(char const prop[], char const value[])
+void property_override(char const prop[], char const value[], bool add)
 {
-    prop_info *pi;
+    auto pi = (prop_info *) __system_property_find(prop);
 
-    pi = (prop_info*) __system_property_find(prop);
-    if (pi)
+    if (pi != nullptr) {
         __system_property_update(pi, value, strlen(value));
-    else
+    } else if (add) {
         __system_property_add(prop, strlen(prop), value, strlen(value));
+    }
 }
 
-void property_override_dual(char const system_prop[],
-        char const vendor_prop[], char const value[])
+void set_ro_product_prop(char const prop[], char const value[])
 {
-    property_override(system_prop, value);
-    property_override(vendor_prop, value);
+    for (const auto &source : ro_product_props_default_source_order) {
+        auto prop_name = "ro.product." + source + prop;
+        property_override(prop_name.c_str(), value, false);
+    }
 }
