@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # inherit from qcom-common
--include device/samsung/qcom-common/BoardConfigCommon.mk
+include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8974
