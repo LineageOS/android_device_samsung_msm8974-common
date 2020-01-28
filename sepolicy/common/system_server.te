@@ -9,7 +9,6 @@ allow system_server {
 }:file r_file_perms;
 
 allow system_server {
-    sysfs_sec_ir
     sysfs_sec_led
     sysfs_sec_touchkey
 }:file w_file_perms;
