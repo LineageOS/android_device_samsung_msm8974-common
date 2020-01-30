@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <!--
 /*
-** Copyright 2017-2018, The LineageOS Project
+** Copyright 2017, The LineageOS Project
 **
 ** Licensed under the Apache License, Version 2.0 (the "License");
 ** you may not use this file except in compliance with the License.
@@ -19,8 +19,11 @@
 
 <carrier_config_list>
     <carrier_config>
+        <boolean name="apn_expand_bool" value="true" />
         <boolean name="world_phone_bool" value="true" />
         <boolean name="allow_adding_apns_bool" value="true" />
+        <boolean name="show_cdma_choices_bool" value="true" />
+        <boolean name="show_apn_setting_cdma_bool" value="true" />
     </carrier_config>
 
     <!-- Verizon hackery -->
