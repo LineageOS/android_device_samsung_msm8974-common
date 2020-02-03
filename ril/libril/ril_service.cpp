@@ -1812,6 +1812,12 @@ Return<void> RadioImpl::setGsmBroadcastConfig(int32_t serial,
     }
 
     int num = configInfo.size();
+    if (num > MAX_BROADCAST_SMS_CONFIG_INFO) {
+        RLOGE("setGsmBroadcastConfig: Invalid configInfo length %s",
+                requestToString(pRI->pCI->requestNumber));
+        sendErrorResponse(pRI, RIL_E_INVALID_ARGUMENTS);
+        return Void();
+    }
     RIL_GSM_BroadcastSmsConfigInfo gsmBci[num];
     RIL_GSM_BroadcastSmsConfigInfo *gsmBciPtrs[num];
 
@@ -1859,6 +1865,12 @@ Return<void> RadioImpl::setCdmaBroadcastConfig(int32_t serial,
     }
 
     int num = configInfo.size();
+    if (num > MAX_BROADCAST_SMS_CONFIG_INFO) {
+        RLOGE("setCdmaBroadcastConfig: Invalid configInfo length %s",
+                requestToString(pRI->pCI->requestNumber));
+        sendErrorResponse(pRI, RIL_E_INVALID_ARGUMENTS);
+        return Void();
+    }
     RIL_CDMA_BroadcastSmsConfigInfo cdmaBci[num];
     RIL_CDMA_BroadcastSmsConfigInfo *cdmaBciPtrs[num];
 
