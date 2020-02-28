@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-   Copyright (c) 2018, The LineageOS Project
+   Copyright (c) 2018-2020, The LineageOS Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -31,6 +31,13 @@
 #ifndef __INIT_MSM8974__H__
 #define __INIT_MSM8974__H__
 
+void cdma_properties(char const operator_alpha[],
+        char const operator_numeric[],
+        char const default_cdma_sub[],
+        char const default_network[],
+        char const rild_lib_variant[]);
+void gsm_properties(char const default_network[],
+        char const rild_lib_variant[]);
 void init_target_properties();
 void property_override(char const prop[], char const value[]);
 void property_override_dual(char const system_prop[],
