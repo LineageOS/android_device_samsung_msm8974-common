@@ -37,11 +37,6 @@
 
 using android::init::property_set;
 
-__attribute__ ((weak))
-void init_target_properties()
-{
-}
-
 void set_rild_libpath(char const variant[])
 {
     std::string libpath("/system/vendor/lib/libsec-ril.");
@@ -97,9 +92,4 @@ void property_override_dual(char const system_prop[],
 {
     property_override(system_prop, value);
     property_override(vendor_prop, value);
-}
-
-void vendor_load_properties()
-{
-    init_target_properties();
 }
