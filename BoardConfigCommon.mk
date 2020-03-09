@@ -17,6 +17,7 @@
 include device/samsung/qcom-common/BoardConfigCommon.mk
 
 # Platform
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
