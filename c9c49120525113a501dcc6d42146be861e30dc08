@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cd834ca5_4577af5b",
+        "filename": "system.prop",
+        "patchSetId": 7
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2020-03-26T03:12:03Z",
+      "side": 1,
+      "message": "newline plz",
+      "revId": "c9c49120525113a501dcc6d42146be861e30dc08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
