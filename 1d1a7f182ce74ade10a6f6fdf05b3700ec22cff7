@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e7045423_e68e1272",
+        "filename": "msm8974.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 135,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-26T02:59:01Z",
+      "side": 0,
+      "message": "Looks like this is \"for Cypress TrueTouch e-ink display controllers used in the B\u0026N Nook\" - if yes, we don\u0027t need that",
+      "range": {
+        "startLine": 135,
+        "startChar": 44,
+        "endLine": 135,
+        "endChar": 57
+      },
+      "revId": "1d1a7f182ce74ade10a6f6fdf05b3700ec22cff7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "06390900_3db7aab2",
+        "filename": "msm8974.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-26T02:59:01Z",
+      "side": 0,
+      "message": "killed this on my klte/hlte and it doesn\u0027t seem to have done anything detrimental - also only see it _used_ on 8960 devices (m7,ville for reference).",
+      "range": {
+        "startLine": 136,
+        "startChar": 44,
+        "endLine": 136,
+        "endChar": 58
+      },
+      "revId": "1d1a7f182ce74ade10a6f6fdf05b3700ec22cff7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2782f3a7_e923db40",
+        "filename": "msm8974.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2020-03-26T02:59:01Z",
+      "side": 0,
+      "message": "If this: https://forum.xda-developers.com/showthread.php?t\u003d2418387 is to be believed (his notes on it make sense), this is actually a Samsung bluetooth keyboard some users of these devices may have/use. Maybe don\u0027t drop this one?",
+      "range": {
+        "startLine": 137,
+        "startChar": 44,
+        "endLine": 137,
+        "endChar": 71
+      },
+      "revId": "1d1a7f182ce74ade10a6f6fdf05b3700ec22cff7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
