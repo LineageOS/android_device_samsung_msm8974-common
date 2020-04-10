@@ -7,8 +7,3 @@ allow system_server {
     efs_file
     qti_debugfs
 }:file r_file_perms;
-
-allow system_server {
-    sysfs_sec_led
-    sysfs_sec_touchkey
-}:file w_file_perms;

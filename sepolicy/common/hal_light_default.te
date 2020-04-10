@@ -1,0 +1,9 @@
+allow hal_light_default {
+    sysfs_sec_led
+    sysfs_sec_touchkey
+}:dir search;
+
+allow hal_light_default {
+    sysfs_sec_led
+    sysfs_sec_touchkey
+}:file rw_file_perms;
