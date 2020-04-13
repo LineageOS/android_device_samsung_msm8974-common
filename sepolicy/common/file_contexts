@@ -34,6 +34,7 @@
 
 # rootfs
 /firmware-modem                                         u:object_r:firmware_file:s0
+/tombstones                                             u:object_r:rootfs:s0
 
 # sockets
 /data/cam_socket3                                       u:object_r:camera_socket:s0
