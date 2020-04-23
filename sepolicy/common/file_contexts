@@ -30,6 +30,9 @@
 /system/vendor/firmware/bcm2079x(.*).ncd                u:object_r:nfc_fw_file:s0
 /system/vendor/firmware/libpn547_fw.so                  u:object_r:nfc_fw_file:s0
 
+# rootfs
+/firmware-modem                                         u:object_r:firmware_file:s0
+
 # sockets
 /data/cam_socket3                                       u:object_r:camera_socket:s0
 
