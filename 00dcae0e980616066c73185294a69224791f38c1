@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c5502e0f_58050b27",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2020-04-25T14:09:47Z",
+      "side": 1,
+      "message": "such an orifinal commit",
+      "revId": "00dcae0e980616066c73185294a69224791f38c1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
