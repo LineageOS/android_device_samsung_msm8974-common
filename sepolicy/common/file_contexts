@@ -8,6 +8,7 @@
 /data/.wifiver.info                                     u:object_r:wifi_data_file:s0
 
 # device nodes
+/dev/alarm                                              u:object_r:alarm_device:s0
 /dev/batch_io                                           u:object_r:sensors_device:s0
 /dev/bcm2079x                                           u:object_r:nfc_device:s0
 /dev/btlock                                             u:object_r:bluetooth_device:s0
