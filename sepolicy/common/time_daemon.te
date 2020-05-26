@@ -1,1 +1,0 @@
-allow time_daemon alarm_device:chr_file rw_file_perms;

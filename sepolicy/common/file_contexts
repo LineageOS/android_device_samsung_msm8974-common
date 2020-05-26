@@ -94,5 +94,9 @@
 # sysfs - sensors
 /sys/devices/virtual/sensors(/.*)?                      u:object_r:sysfs_sensors:s0
 
+# sysfs - time
+/sys/devices/qpnp-rtc-[0-9]+/rtc/rtc0(/.*)?             u:object_r:sysfs_rtc:s0
+/(system/vendor|vendor)/bin/timekeep                    u:object_r:timekeep_exec:s0
+
 # sysfs - usb
 /sys/devices/virtual/host_notify/usb_otg(/.*)?               u:object_r:sysfs_usb_otg:s0
