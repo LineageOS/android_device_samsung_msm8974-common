@@ -70,12 +70,24 @@ extern "C" {
 #define ULP_LOCATION_IS_FROM_PIP      0x0040
 
 #define ULP_MIN_INTERVAL_INVALID 0xffffffff
+#define ULP_MAX_NMEA_STRING_SIZE 201
 
 /*Emergency SUPL*/
 #define GPS_NI_TYPE_EMERGENCY_SUPL    4
 
 #define AGPS_CERTIFICATE_MAX_LENGTH 2000
 #define AGPS_CERTIFICATE_MAX_SLOTS 10
+
+typedef uint32_t LocPosTechMask;
+#define LOC_POS_TECH_MASK_DEFAULT ((LocPosTechMask)0x00000000)
+#define LOC_POS_TECH_MASK_SATELLITE ((LocPosTechMask)0x00000001)
+#define LOC_POS_TECH_MASK_CELLID ((LocPosTechMask)0x00000002)
+#define LOC_POS_TECH_MASK_WIFI ((LocPosTechMask)0x00000004)
+#define LOC_POS_TECH_MASK_SENSORS ((LocPosTechMask)0x00000008)
+#define LOC_POS_TECH_MASK_REFERENCE_LOCATION ((LocPosTechMask)0x00000010)
+#define LOC_POS_TECH_MASK_INJECTED_COARSE_POSITION ((LocPosTechMask)0x00000020)
+#define LOC_POS_TECH_MASK_AFLT ((LocPosTechMask)0x00000040)
+#define LOC_POS_TECH_MASK_HYBRID ((LocPosTechMask)0x00000080)
 
 enum loc_registration_mask_status {
     LOC_REGISTRATION_MASK_ENABLED,
@@ -88,6 +100,7 @@ typedef struct {
     GpsLocation     gpsLocation;
     /* Provider indicator for HYBRID or GPS */
     uint16_t        position_source;
+    LocPosTechMask  tech_mask;
     /*allows HAL to pass additional information related to the location */
     int             rawDataSize;         /* in # of bytes */
     void            * rawData;
@@ -96,6 +109,13 @@ typedef struct {
     char            map_url[GPS_LOCATION_MAP_URL_SIZE];
     unsigned char   map_index[GPS_LOCATION_MAP_INDEX_SIZE];
 } UlpLocation;
+
+typedef struct {
+    /** set to sizeof(UlpNmea) */
+    size_t          size;
+    char            nmea_str[ULP_MAX_NMEA_STRING_SIZE];
+    unsigned int    len;
+} UlpNmea;
 
 /** AGPS type */
 typedef int16_t AGpsExtType;
@@ -165,14 +185,14 @@ typedef struct {
 } AGpsExtCallbacks;
 
 
+typedef void (*loc_ni_notify_callback)(GpsNiNotification *notification, bool esEnalbed);
 /** GPS NI callback structure. */
 typedef struct
 {
     /**
      * Sends the notification request from HAL to GPSLocationProvider.
      */
-    gps_ni_notify_callback notify_cb;
-    gps_create_thread create_thread_cb;
+    loc_ni_notify_callback notify_cb;
 } GpsNiExtCallbacks;
 
 typedef enum loc_server_type {
@@ -300,17 +320,6 @@ enum loc_sess_status {
     LOC_SESS_INTERMEDIATE,
     LOC_SESS_FAILURE
 };
-
-typedef uint32_t LocPosTechMask;
-#define LOC_POS_TECH_MASK_DEFAULT ((LocPosTechMask)0x00000000)
-#define LOC_POS_TECH_MASK_SATELLITE ((LocPosTechMask)0x00000001)
-#define LOC_POS_TECH_MASK_CELLID ((LocPosTechMask)0x00000002)
-#define LOC_POS_TECH_MASK_WIFI ((LocPosTechMask)0x00000004)
-#define LOC_POS_TECH_MASK_SENSORS ((LocPosTechMask)0x00000008)
-#define LOC_POS_TECH_MASK_REFERENCE_LOCATION ((LocPosTechMask)0x00000010)
-#define LOC_POS_TECH_MASK_INJECTED_COARSE_POSITION ((LocPosTechMask)0x00000020)
-#define LOC_POS_TECH_MASK_AFLT ((LocPosTechMask)0x00000040)
-#define LOC_POS_TECH_MASK_HYBRID ((LocPosTechMask)0x00000080)
 
 typedef enum {
   LOC_ENG_IF_REQUEST_SENDER_ID_QUIPC = 0,

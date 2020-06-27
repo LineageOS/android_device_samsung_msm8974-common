@@ -102,6 +102,7 @@ static const loc_param_s_type gps_conf_table[] =
   {"A_GLONASS_POS_PROTOCOL_SELECT",  &gps_conf.A_GLONASS_POS_PROTOCOL_SELECT,  NULL, 'n'},
   {"AGPS_CERT_WRITABLE_MASK",        &gps_conf.AGPS_CERT_WRITABLE_MASK,        NULL, 'n'},
   {"SUPL_MODE",                      &gps_conf.SUPL_MODE,                      NULL, 'n'},
+  {"SUPL_ES",                        &gps_conf.SUPL_ES,                        NULL, 'n'},
   {"INTERMEDIATE_POS",               &gps_conf.INTERMEDIATE_POS,               NULL, 'n'},
   {"ACCURACY_THRES",                 &gps_conf.ACCURACY_THRES,                 NULL, 'n'},
   {"NMEA_PROVIDER",                  &gps_conf.NMEA_PROVIDER,                  NULL, 'n'},
@@ -143,6 +144,7 @@ static void loc_default_parameters(void)
    gps_conf.GPS_LOCK = 0;
    gps_conf.SUPL_VER = 0x10000;
    gps_conf.SUPL_MODE = 0x3;
+   gps_conf.SUPL_ES = 0;
    gps_conf.CAPABILITIES = 0x7;
    /* LTE Positioning Profile configuration is disable by default*/
    gps_conf.LPP_PROFILE = 0;
@@ -1976,7 +1978,6 @@ static int loc_eng_stop_handler(loc_eng_data_s_type &loc_eng_data)
    int ret_val = LOC_API_ADAPTER_ERR_SUCCESS;
 
    if (loc_eng_data.adapter->isInSession()) {
-
        ret_val = loc_eng_data.adapter->stopFix();
        loc_eng_data.adapter->setInSession(FALSE);
    }
@@ -2737,6 +2738,8 @@ void loc_eng_configuration_update (loc_eng_data_s_type &loc_eng_data,
         gps_conf_tmp.SUPL_VER = gps_conf.SUPL_VER;
         gps_conf_tmp.LPP_PROFILE = gps_conf.LPP_PROFILE;
         gps_conf_tmp.A_GLONASS_POS_PROTOCOL_SELECT = gps_conf.A_GLONASS_POS_PROTOCOL_SELECT;
+        gps_conf_tmp.SUPL_MODE = gps_conf.SUPL_MODE;
+        gps_conf_tmp.SUPL_ES = gps_conf.SUPL_ES;
         gps_conf_tmp.GPS_LOCK = gps_conf.GPS_LOCK;
         gps_conf = gps_conf_tmp;
     }
@@ -2858,7 +2861,7 @@ void loc_eng_handle_engine_up(loc_eng_data_s_type &loc_eng_data)
     if (loc_eng_data.adapter->isInSession()) {
         // This sets the copy in adapter to modem
         loc_eng_data.adapter->setInSession(false);
-        loc_eng_data.adapter->sendMsg(new LocEngStartFix(loc_eng_data.adapter));
+        loc_eng_start_handler(loc_eng_data);
     }
     EXIT_LOG(%s, VOID_RET);
 }
