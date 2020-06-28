@@ -59,7 +59,6 @@ void loc_eng_nmea_send(char *pNmea, int length, loc_eng_data_s_type *loc_eng_dat
     struct timeval tv;
     gettimeofday(&tv, (struct timezone *) NULL);
     int64_t now = tv.tv_sec * 1000LL + tv.tv_usec / 1000;
-    CALLBACK_LOG_CALLFLOW("nmea_cb", %p, pNmea);
     if (loc_eng_data_p->nmea_cb != NULL)
         loc_eng_data_p->nmea_cb(now, pNmea, length);
 
@@ -96,8 +95,12 @@ int loc_eng_nmea_put_checksum(char *pNmea, int maxSize)
         length++;
     }
 
+    // length now contains nmea sentence string length not including $ sign.
     int checksumLength = snprintf(pNmea,(maxSize-length-1),"*%02X\r\n", checksum);
-    return (length + checksumLength);
+
+    // total length of nmea sentence is length of nmea sentence inc $ sign plus
+    // length of checksum (+1 is to cover the $ character in the length).
+    return (length + checksumLength + 1);
 }
 
 /*===========================================================================
