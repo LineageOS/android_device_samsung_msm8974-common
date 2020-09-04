@@ -9,3 +9,5 @@ allow vold {
 }:blk_file getattr;
 
 allowxperm vold vold_device:blk_file ioctl 0x1271;
+
+dontaudit vold hal_bootctl_hwservice:hwservice_manager find;
