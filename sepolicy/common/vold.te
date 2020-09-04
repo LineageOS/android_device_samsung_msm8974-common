@@ -7,3 +7,6 @@ allow vold {
     efs_block_device
     system_block_device
 }:blk_file getattr;
+
+allowxperm vold vold_device:blk_file ioctl 0x1271;
+allowxperm vold vold_device:blk_file ioctl BLKROGET;
