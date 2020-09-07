@@ -42,5 +42,8 @@ vendor/lib/librs_adreno_sha1.so|e797997d3ac69dfa87904863672c5b9769c796cc
 # STLport (Camera/RIL) - local compile LineageOS/external/stlport@984b8432
 vendor/lib/libstlport.so|0be0a0d13e12fbf95d97d309dcbc25d3f969a469
 
+# Time services (Samsung klte - G900FXXU1CSA1_G900FVIA1CSC1_VIA)
+vendor/lib/libtime_genoff.so|13eccbbd1fdbd8474247ed6552e3b31507636531
+
 # Widevine (Google angler - OPR6.170623.017)
 vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
