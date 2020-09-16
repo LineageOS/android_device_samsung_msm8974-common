@@ -37,8 +37,6 @@
 
 #include "init_msm8974.h"
 
-using android::init::property_set;
-
 // copied from build/tools/releasetools/ota_from_target_files.py
 // but with "." at the end and empty entry
 std::vector<std::string> ro_product_props_default_source_order = {
@@ -66,15 +64,15 @@ void cdma_properties(char const operator_alpha[],
         char const rild_lib_variant[])
 {
     // Dynamic CDMA Properties
-    property_set("ro.cdma.home.operator.alpha", operator_alpha);
-    property_set("ro.cdma.home.operator.numeric", operator_numeric);
-    property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
-    property_set("ro.telephony.default_network", default_network);
+    property_override("ro.cdma.home.operator.alpha", operator_alpha);
+    property_override("ro.cdma.home.operator.numeric", operator_numeric);
+    property_override("ro.telephony.default_cdma_sub", default_cdma_sub);
+    property_override("ro.telephony.default_network", default_network);
     set_rild_libpath(rild_lib_variant);
 
     // Static CDMA Properties
-    property_set("ril.subscription.types", "NV,RUIM");
-    property_set("telephony.lteOnCdmaDevice", "1");
+    property_override("ril.subscription.types", "NV,RUIM");
+    property_override("telephony.lteOnCdmaDevice", "1");
 }
 
 void gsm_properties(const char default_network[],
@@ -83,10 +81,10 @@ void gsm_properties(const char default_network[],
     set_rild_libpath(rild_lib_variant);
 
     // Dynamic GSM Properties
-    property_set("ro.telephony.default_network", default_network);
+    property_override("ro.telephony.default_network", default_network);
 
     // Static GSM Properties
-    property_set("telephony.lteOnGsmDevice", "1");
+    property_override("telephony.lteOnGsmDevice", "1");
 }
 
 void property_override(char const prop[], char const value[], bool add)
