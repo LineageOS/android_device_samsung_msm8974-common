@@ -44,8 +44,9 @@ std::vector<std::string> ro_product_props_default_source_order = {
     "product.",
     "product_services.",
     "odm.",
-    "vendor.",
     "system.",
+    "system_ext.",
+    "vendor.",
 };
 
 void set_rild_libpath(char const variant[])
