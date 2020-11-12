@@ -7,3 +7,6 @@ allow system_server {
     efs_file
     qti_debugfs
 }:file r_file_perms;
+
+get_prop(system_server, userspace_reboot_config_prop);
+get_prop(system_server, userspace_reboot_exported_prop);
