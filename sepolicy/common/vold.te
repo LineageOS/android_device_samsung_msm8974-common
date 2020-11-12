@@ -1,6 +1,9 @@
 allow vold efs_file:dir rw_dir_perms;
 allow vold efs_file:file create;
 
+# For setting read_ahead_kb
+allow vold sysfs_mmc_host:file w_file_perms;
+
 allow vold {
     block_device
     cache_block_device
