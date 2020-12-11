@@ -1,8 +1,5 @@
 type_transition mm-qcamerad system_data_root_file:sock_file camera_socket "cam_socket3";
 
-# Allow mm-qcamera-daemon to create the socket camera_socket
-allow mm-qcamerad system_data_root_file:dir w_dir_perms;
-
 allow mm-qcamerad sysfs_camera:dir search;
 allow mm-qcamerad sysfs_camera:file rw_file_perms;
 allow mm-qcamerad vendor_file:file execmod;
