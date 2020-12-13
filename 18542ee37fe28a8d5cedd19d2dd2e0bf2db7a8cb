@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "183e0c16_535e6347",
+        "filename": "configs/ld.config.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-12-13T04:34:41Z",
+      "side": 1,
+      "message": "libashmemd_client.so change can be reverted, it is never correct in the first place, and google fixed it correctly on R.",
+      "revId": "18542ee37fe28a8d5cedd19d2dd2e0bf2db7a8cb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
