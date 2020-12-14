@@ -1,1 +1,2 @@
 genfscon proc /bluetooth/sleep u:object_r:proc_bt_sleep:s0
+genfscon proc /last_kmsg u:object_r:proc_last_kmsg:s0
