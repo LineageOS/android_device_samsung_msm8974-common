@@ -1,4 +1,5 @@
 set_prop(rild, net_radio_prop)
+set_prop(rild, radio_prop)
 
 allow rild alarm_device:chr_file rw_file_perms;
 
