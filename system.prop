@@ -6,6 +6,15 @@ av.offload.enable=true
 # GL
 ro.opengles.version=196608
 
+# Display
+ro.hdcp2.rx=tz
+ro.qualcomm.cabl=1
+ro.secwvk=144
+ro.sf.lcd_density=480
+debug.hwui.use_buffer_age=false
+debug.sf.enable_gl_backpressure=1
+debug.sf.latch_unsignaled=1
+
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
