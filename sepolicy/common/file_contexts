@@ -22,6 +22,7 @@
 /efs/wifi(/.*)?                                         u:object_r:wifi_efs_file:s0
 
 # executeables
+/system/bin/clean_scratch_files                         u:object_r:clean_scratch_files_exec:s0
 /system/vendor/bin/macloader                            u:object_r:macloader_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software       u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.samsung                u:object_r:hal_ir_default_exec:s0
