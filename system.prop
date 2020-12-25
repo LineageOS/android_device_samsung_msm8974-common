@@ -3,9 +3,6 @@ audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=false
 av.offload.enable=true
 
-# fastbootd
-ro.fastbootd.available=true
-
 # GL
 ro.opengles.version=196608
 
