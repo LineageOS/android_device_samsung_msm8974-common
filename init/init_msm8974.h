@@ -39,7 +39,7 @@ void cdma_properties(char const operator_alpha[],
 void gsm_properties(char const default_network[],
         char const rild_lib_variant[]);
 void init_target_properties();
-void property_override(char const prop[], char const value[], bool add=false);
+void property_override(char const prop[], char const value[], bool add=true);
 void set_ro_product_prop(char const prop[], char const value[]);
 
 #endif /* __INIT_MSM8974__H__ */
