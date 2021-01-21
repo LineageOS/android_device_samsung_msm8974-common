@@ -57,7 +57,6 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
-OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
 # Shader cache config options
