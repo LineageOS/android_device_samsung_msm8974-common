@@ -3,6 +3,9 @@ audio.offload.buffer.size.kb=32
 audio.offload.gapless.enabled=false
 av.offload.enable=true
 
+# Bluetooth
+bluetooth.enable_timeout_ms=12000
+
 # fastbootd
 ro.fastbootd.available=true
 
