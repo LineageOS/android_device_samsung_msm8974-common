@@ -7,4 +7,5 @@ allow hal_lineage_touch_default {
 allow hal_lineage_touch_default {
     sysfs_sec_epen
     sysfs_sec_tsp
+    sysfs_sec_touchkey
 }:file rw_file_perms;
