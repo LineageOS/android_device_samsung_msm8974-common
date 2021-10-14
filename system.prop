@@ -6,6 +6,9 @@ av.offload.enable=true
 # Bluetooth
 bluetooth.enable_timeout_ms=12000
 
+# BPF
+ro.kernel.ebpf.supported=false
+
 # fastbootd
 ro.fastbootd.available=true
 
