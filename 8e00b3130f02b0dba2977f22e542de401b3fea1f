@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32312c6b_2b45dcef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2021-12-23T01:54:33Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2: Code-Review-2\n\u003e \n\u003e Not until the feature lands in 19 platform\n\nit is now in 19.0 platform.\n\nJust checked it on hlte/klteactivexx 18.1 again, and all seems fine.",
+      "revId": "8e00b3130f02b0dba2977f22e542de401b3fea1f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
