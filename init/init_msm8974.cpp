@@ -55,7 +55,7 @@ void set_rild_libpath(char const variant[])
     libpath += variant;
     libpath += ".so";
 
-    property_override("rild.libpath", libpath.c_str());
+    property_override("vendor.rild.libpath", libpath.c_str());
 }
 
 void cdma_properties(char const operator_alpha[],
