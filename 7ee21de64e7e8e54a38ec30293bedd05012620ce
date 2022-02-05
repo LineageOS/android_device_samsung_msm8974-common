@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf86ca8d_cdd3ceb4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25958
+      },
+      "writtenOn": "2022-02-05T04:39:48Z",
+      "side": 1,
+      "message": "there\u0027s no lineage-19.0 branch for this devices so i just pushed here.",
+      "revId": "7ee21de64e7e8e54a38ec30293bedd05012620ce",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
