@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fbb2b98_c30bf69a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-09-07T21:51:14Z",
+      "side": 1,
+      "message": "this is in common_mobile.mk, so we weren\u0027t discluding it.",
+      "revId": "a784a6f5a28fa6d752dd55a4395e8c61b77f6b2b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
