@@ -22,7 +22,9 @@
 /efs/wifi(/.*)?                                         u:object_r:wifi_efs_file:s0
 
 # executeables
-/system/vendor/bin/macloader                            u:object_r:macloader_exec:s0
+/(vendor|system/vendor)/bin/dtc.sh                                                        u:object_r:vendor_install_recovery_exec:s0
+/(vendor|system/vendor)/bin/macloader                                                     u:object_r:macloader_exec:s0
+/(vendor|system/vendor)/bin/recovery-transform\.sh                                        u:object_r:vendor_install_recovery_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software       u:object_r:hal_gatekeeper_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.ir@1\.0-service\.samsung                u:object_r:hal_ir_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.samsung		  u:object_r:hal_light_default_exec:s0
