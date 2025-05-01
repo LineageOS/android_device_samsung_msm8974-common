@@ -1,0 +1,12 @@
+allow vendor_install_recovery vendor_install_recovery_exec:file { execute execute_no_trans r_file_perms };
+allow vendor_install_recovery shell_exec:file { execute execute_no_trans r_file_perms };
+allow vendor_install_recovery toolbox_exec:file { execute execute_no_trans r_file_perms };
+
+allow vendor_install_recovery self:capability { dac_override sys_resource };
+
+allow vendor_install_recovery block_device:blk_file rw_file_perms;
+
+allow vendor_install_recovery proc_cmdline:file r_file_perms;
+
+allow vendor_install_recovery shell_data_file:dir create_dir_perms;
+allow vendor_install_recovery shell_data_file:file create_file_perms;
